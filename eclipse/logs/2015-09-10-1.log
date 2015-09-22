@@ -1,0 +1,23 @@
+[21:33:09] [main/INFO]: Setting user: Player106
+[21:33:10] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:33:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:33:15] [Sound Library Loader/INFO]: Sound engine started
+[21:33:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:33:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:33:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:33:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:33:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:33:18] [Sound Library Loader/INFO]: Sound engine started
+[21:33:24] [Client thread/INFO]: Deleting level New World
+[21:33:24] [Client thread/INFO]: Attempt 1...
+[21:34:47] [main/INFO]: Setting user: Player802
+[21:34:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:34:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:34:53] [Sound Library Loader/INFO]: Sound engine started
+[21:34:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:34:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:34:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:34:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:34:56] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:34:56] [Sound Library Loader/INFO]: Sound engine started
+[21:35:11] [Client thread/INFO]: Stopping!
