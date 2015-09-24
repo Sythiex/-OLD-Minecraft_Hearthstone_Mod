@@ -10,8 +10,8 @@
 :apiClasses UP-TO-DATE
 :sourceMainJava UP-TO-DATE
 :compileJava UP-TO-DATE
-:processResources UP-TO-DATE
-:classes UP-TO-DATE
+:processResources
+:classes
 :jar
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
@@ -28,4 +28,4 @@
 
 BUILD SUCCESSFUL
 
-Total time: 14.006 secs
+Total time: 21.602 secs
