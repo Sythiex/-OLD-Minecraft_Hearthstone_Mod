@@ -10,12 +10,13 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 @Mod(modid = HearthstoneMod.MODID, version = HearthstoneMod.VERSION)
 public class HearthstoneMod
 {
 	public static final String MODID = "hearthstonemod";
-    public static final String VERSION = "0.1.2";
+    public static final String VERSION = "0.1.3";
     
     public static boolean difficulty;
 	
@@ -40,25 +41,19 @@ public class HearthstoneMod
     	
     	if(difficulty)
     	{
-    		ItemStack stoneStack = new ItemStack(Blocks.stone);
-    		ItemStack clockStack = new ItemStack(Items.clock);
-    		ItemStack lapisStack = new ItemStack(Items.dye, 1, 4);
-    		GameRegistry.addRecipe(new ItemStack(hearthstone),
+    		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(hearthstone), new Object[]{
     			"SLS",
     			"LCL",
     			"SLS",
-    			'S', stoneStack, 'C', clockStack, 'L', lapisStack);
+    			'S', "stone", 'L', "gemLapis", 'C', new ItemStack(Items.clock)}));
     	}
     	else
     	{
-    		ItemStack stoneStack = new ItemStack(Blocks.stone);
-    		ItemStack clockStack = new ItemStack(Items.clock);
-    		ItemStack diamondStack = new ItemStack(Items.diamond);
-    		GameRegistry.addRecipe(new ItemStack(hearthstone),
-    			"SDS",
-    			"DCD",
-    			"SDS",
-    			'S', stoneStack, 'C', clockStack, 'D', diamondStack);
+    		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(hearthstone), new Object[]{
+        			"SDS",
+        			"DCD",
+        			"SDS",
+        			'S', "stone", 'D', "gemDiamond", 'C', new ItemStack(Items.clock)}));
     	}
     }
 }

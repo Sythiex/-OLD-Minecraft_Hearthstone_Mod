@@ -1,11 +1,44 @@
-[21:36:06] [main/INFO]: Setting user: Player936
-[21:36:07] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:36:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[21:36:12] [Sound Library Loader/INFO]: Sound engine started
-[21:36:14] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:36:14] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:36:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[21:36:14] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:36:14] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:36:15] [Sound Library Loader/INFO]: Sound engine started
-[21:36:52] [Client thread/INFO]: Stopping!
+[18:47:18] [main/INFO]: Setting user: Player317
+[18:47:20] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:47:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[18:47:27] [Sound Library Loader/INFO]: Sound engine started
+[18:47:28] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:47:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:47:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[18:47:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:47:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:47:30] [Sound Library Loader/INFO]: Sound engine started
+[18:48:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:48:17] [Server thread/INFO]: Generating keypair
+[18:48:17] [Server thread/INFO]: Converting map!
+[18:48:17] [Server thread/INFO]: Scanning folders...
+[18:48:17] [Server thread/INFO]: Total conversion count is 0
+[18:48:17] [Server thread/WARN]: Unable to find spawn biome
+[18:48:18] [Server thread/INFO]: Preparing start region for level 0
+[18:48:19] [Server thread/INFO]: Preparing spawn area: 10%
+[18:48:20] [Server thread/INFO]: Preparing spawn area: 23%
+[18:48:21] [Server thread/INFO]: Preparing spawn area: 37%
+[18:48:22] [Server thread/INFO]: Preparing spawn area: 51%
+[18:48:23] [Server thread/INFO]: Preparing spawn area: 63%
+[18:48:24] [Server thread/INFO]: Preparing spawn area: 76%
+[18:48:25] [Server thread/INFO]: Preparing spawn area: 92%
+[18:48:25] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:48:26] [Server thread/INFO]: Player317[local:E:1d467fff] logged in with entity id 57 at (-281.5, 71.0, 102.5)
+[18:48:26] [Server thread/INFO]: Player317 joined the game
+[18:48:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 351 ms
+[18:48:32] [Client thread/INFO]: Warning: Clientside chunk ticking took 145 ms
+[18:49:01] [Server thread/INFO]: Player317 has just earned the achievement [Taking Inventory]
+[18:49:01] [Client thread/INFO]: [CHAT] Player317 has just earned the achievement [Taking Inventory]
+[18:49:09] [Server thread/INFO]: [Player317: Set the time to 13000]
+[18:49:09] [Client thread/INFO]: [CHAT] Set the time to 13000
+[18:51:09] [Server thread/INFO]: Saving and pausing game...
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:51:09] [Server thread/INFO]: Stopping server
+[18:51:09] [Server thread/INFO]: Saving players
+[18:51:09] [Server thread/INFO]: Saving worlds
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:51:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:51:11] [Client thread/INFO]: Stopping!
