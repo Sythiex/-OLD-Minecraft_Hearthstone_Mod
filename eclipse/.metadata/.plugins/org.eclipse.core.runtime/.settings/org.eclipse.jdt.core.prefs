@@ -15,3 +15,7 @@ org.eclipse.jdt.core.compiler.problem.unusedImport=ignore
 org.eclipse.jdt.core.compiler.problem.unusedLocal=ignore
 org.eclipse.jdt.core.compiler.problem.unusedPrivateMember=ignore
 org.eclipse.jdt.core.compiler.source=1.6
+org.eclipse.jdt.core.formatter.alignment_for_arguments_in_annotation=16
+org.eclipse.jdt.core.formatter.comment.insert_new_line_for_parameter=do not insert
+org.eclipse.jdt.core.formatter.comment.line_length=125
+org.eclipse.jdt.core.formatter.lineSplit=125

@@ -10,7 +10,7 @@
 :apiClasses UP-TO-DATE
 :sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: C:\Users\Sythiex\Desktop\minecraft modding\Hearthstone\build\sources\java\com\sythiex\hearthstonemod\ItemHearthstone.java uses unchecked or unsafe operations.
+Note: C:\Users\Aaron\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build\sources\java\com\sythiex\hearthstonemod\ItemHearthstone.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
@@ -21,9 +21,9 @@ Note: Recompile with -Xlint:unchecked for details.
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData UP-TO-DATE
+:extractMcpData
 :getVersionJson
-:extractUserDev UP-TO-DATE
+:extractUserDev
 :genSrgs SKIPPED
 :reobf
 :assemble
@@ -32,4 +32,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 17.412 secs
+Total time: 18.615 secs

@@ -16,7 +16,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class HearthstoneMod
 {
 	public static final String MODID = "hearthstonemod";
-    public static final String VERSION = "0.1.3";
+    public static final String VERSION = "0.1.4";
     
     public static boolean difficulty;
 	
@@ -45,15 +45,15 @@ public class HearthstoneMod
     			"SLS",
     			"LCL",
     			"SLS",
-    			'S', "stone", 'L', "gemLapis", 'C', new ItemStack(Items.clock)}));
+    			'S', "stone", 'L', "gemLapis", 'C', new ItemStack(Items.compass)}));
     	}
     	else
     	{
     		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(hearthstone), new Object[]{
-        			"SDS",
-        			"DCD",
-        			"SDS",
-        			'S', "stone", 'D', "gemDiamond", 'C', new ItemStack(Items.clock)}));
+        		"SDS",
+        		"DCD",
+        		"SDS",
+        		'S', "stone", 'D', "gemDiamond", 'C', new ItemStack(Items.compass)}));
     	}
     }
 }
