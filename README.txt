@@ -1,37 +1,29 @@
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
-
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
-
-Source pack installation information:
-
-Standalone source installation
-==============================
-
-To install this source code for development purposes, extract this zip file.
-It ships with a demonstration mod. Run 'gradlew setupDevWorkspace' to create
-a gradle environment primed with FML. Run 'gradlew eclipse' or 'gradlew idea' to
-create an IDE workspace of your choice.
-Refer to ForgeGradle for more information about the gradle environment
-Note: On macs or linux you run the './gradlew.sh' instead of 'gradlew'
-
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
-
-For reference this is version @MAJOR@.@MINOR@.@REV@.@BUILD@ of FML
-for Minecraft version @MCVERSION@.
-
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
-
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+TERMS AND CONDITIONS
+    0. USED TERMS
+    MOD - modification, plugin, a piece of software that interfaces with the Minecraft client to extend, add, 
+	change or remove original capabilities.
+    MOJANG - Mojang AB
+    OWNER - <your name>, Original author(s) of the MOD. Under the copyright terms accepted when purchasing 
+	Minecraft (http://www.minecraft.net/copyright.jsp) the OWNER has full rights over their MOD despite 
+	use of MOJANG code.
+    USER - End user of the mod, person installing the mod.
+ 
+    1. LIABILITY
+    	THIS MOD IS PROVIDED 'AS IS' WITH NO WARRANTIES, IMPLIED OR OTHERWISE. THE OWNER OF THIS MOD TAKES NO 
+	RESPONSIBILITY FOR ANY DAMAGES INCURRED FROM THE USE OF THIS MOD. THIS MOD ALTERS FUNDAMENTAL PARTS 
+	OF THE MINECRAFT GAME, PARTS OF MINECRAFT MAY NOT WORK WITH THIS MOD INSTALLED. ALL DAMAGES CAUSED 
+	FROM THE USE OR MISUSE OF THIS MOD FALL ON THE USER.
+ 
+    2. USE
+    	Use of this MOD to be installed, manually or automatically, is given to the USER without restriction.
+ 
+    3. REDISTRIBUTION
+    	This MOD may only be distributed where uploaded, mirrored, or otherwise linked to by the OWNER solely. 
+	All mirrors of this mod must have advance written permission from the OWNER. ANY attempts to make money 
+	off of this MOD (selling, selling modified versions, adfly, sharecash, etc.) are STRICTLY FORBIDDEN, 
+	and the OWNER may claim damages or take other action to rectify the situation.
+ 
+    4. DERIVATIVE WORKS/MODIFICATION
+    	This mod is provided freely and may be decompiled and modified for private use, either with a decompiler 
+	or a bytecode editor. Public distribution of modified versions of this MOD require advance written 
+	permission of the OWNER and may be subject to certain terms.

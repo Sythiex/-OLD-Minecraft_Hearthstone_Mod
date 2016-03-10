@@ -1,0 +1,4 @@
+item.hearthstone.name=Hearthstone
+msg.hearthstoneOnCooldown.txt=Hearthstone is on cooldown!
+msg.hearthstoneNoBed.txt=You don't have a bed!
+msg.hearthstoneMissingBed=Your bed is missing! Hearthstone link is broken!

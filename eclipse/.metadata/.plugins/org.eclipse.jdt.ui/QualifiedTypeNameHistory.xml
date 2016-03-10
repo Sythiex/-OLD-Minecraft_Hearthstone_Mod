@@ -7,4 +7,5 @@
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="net.minecraftforge.oredict.ShapedOreRecipe"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
 </qualifiedTypeNameHistroy>

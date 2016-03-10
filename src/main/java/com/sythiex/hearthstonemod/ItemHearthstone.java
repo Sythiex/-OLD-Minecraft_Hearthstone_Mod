@@ -3,6 +3,7 @@ package com.sythiex.hearthstonemod;
 import java.text.DecimalFormat;
 import java.util.List;
 
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,8 +19,7 @@ import net.minecraft.world.WorldServer;
 
 public class ItemHearthstone extends Item
 {
-	public static int maxCooldown = 24000;
-	public static int maxCastTime = 25;
+	public static int maxCooldown = 36000; // 30min
 	
 	public ItemHearthstone()
 	{
@@ -33,7 +33,7 @@ public class ItemHearthstone extends Item
 	/** used to update cooldown and to set default tag values to a new item */
 	public void onUpdate(ItemStack itemStack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
 	{
-		if (itemStack.stackTagCompound != null)
+		if(itemStack.stackTagCompound != null)
 		{
 			int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
 			if(cooldown > 0)
@@ -45,74 +45,207 @@ public class ItemHearthstone extends Item
 		else
 		{
 			itemStack.stackTagCompound = new NBTTagCompound();
-		    itemStack.stackTagCompound.setInteger("cooldown", 0);
-		    itemStack.stackTagCompound.setInteger("castTime", 0);
-		    itemStack.stackTagCompound.setInteger("distance", 0);
+			itemStack.stackTagCompound.setInteger("cooldown", 0);
+			itemStack.stackTagCompound.setInteger("bedX", 0);
+			itemStack.stackTagCompound.setInteger("bedY", 0);
+			itemStack.stackTagCompound.setInteger("bedZ", 0);
+			itemStack.stackTagCompound.setInteger("bedDimension", 0);
+			itemStack.stackTagCompound.setBoolean("locationSet", false);
+			// itemStack.stackTagCompound.setInteger("distance", 0);
 		}
 	}
 	
 	/** teleports the player */
+	@Override
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player)
-    {
+	{
 		if(!world.isRemote)
 		{
-			ChunkCoordinates bedCoords = player.getBedLocation(0);
-			if(bedCoords != null)
+			// not sneaking
+			if(!player.isSneaking())
 			{
-				if(itemStack.stackTagCompound.getInteger("cooldown") == 0)
+				// location is set
+				if(itemStack.stackTagCompound.getBoolean("locationSet"))
 				{
-					if(player.dimension == 0)
-						itemStack.stackTagCompound.setInteger("distance", (int) (itemStack.stackTagCompound.getInteger("distance") + (player.getDistance(bedCoords.posX + .5, bedCoords.posY + 1, bedCoords.posZ + .5))));
+					int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
+					// off cooldown
+					if(cooldown <= 0)
+					{
+						int dimension = itemStack.stackTagCompound.getInteger("bedDimension");
+						// if player is not in same dimension as bed, travel to that dimension
+						if(dimension != player.dimension)
+						{
+							player.travelToDimension(dimension);
+						}
+						
+						int bedX = itemStack.stackTagCompound.getInteger("bedX");
+						int bedY = itemStack.stackTagCompound.getInteger("bedY");
+						int bedZ = itemStack.stackTagCompound.getInteger("bedZ");
+						
+						// checks if bed is still there
+						if(player.worldObj.getBlock(bedX, bedY, bedZ).isBed(player.worldObj, bedX, bedY, bedZ, player))
+						{
+							Material material1 = player.worldObj.getBlock(bedX - 1, bedY, bedZ).getMaterial();
+							Material material2 = player.worldObj.getBlock(bedX - 1, bedY + 1, bedZ).getMaterial();
+							
+							Material material3 = player.worldObj.getBlock(bedX + 1, bedY, bedZ).getMaterial();
+							Material material4 = player.worldObj.getBlock(bedX + 1, bedY + 1, bedZ).getMaterial();
+							
+							Material material5 = player.worldObj.getBlock(bedX, bedY, bedZ - 1).getMaterial();
+							Material material6 = player.worldObj.getBlock(bedX, bedY + 1, bedZ - 1).getMaterial();
+							
+							Material material7 = player.worldObj.getBlock(bedX, bedY, bedZ + 1).getMaterial();
+							Material material8 = player.worldObj.getBlock(bedX, bedY + 1, bedZ + 1).getMaterial();
+							
+							// finds open space around bed and tps player
+							if(!material1.isSolid() && !material1.isLiquid() && !material2.isSolid()
+									&& !material2.isLiquid())
+							{
+								player.setPositionAndUpdate(bedX - 1 + 0.5, bedY, bedZ + 0.5);
+							}
+							else if(!material3.isSolid() && !material3.isLiquid() && !material4.isSolid()
+									&& !material4.isLiquid())
+							{
+								player.setPositionAndUpdate(bedX + 1 + 0.5, bedY, bedZ + 0.5);
+							}
+							else if(!material5.isSolid() && !material5.isLiquid() && !material6.isSolid()
+									&& !material6.isLiquid())
+							{
+								player.setPositionAndUpdate(bedX + 0.5, bedY, bedZ - 1 + 0.5);
+							}
+							else if(!material7.isSolid() && !material7.isLiquid() && !material8.isSolid()
+									&& !material8.isLiquid())
+							{
+								player.setPositionAndUpdate(bedX + 0.5, bedY, bedZ + 1 + 0.5);
+							}
+							// defaults to tp player on top of bed
+							else
+							{
+								player.setPositionAndUpdate(bedX + 0.5, bedY + 1, bedZ + 0.5);
+							}
+							
+							itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
+						}
+						// tps player to where bed was, then breaks link
+						else
+						{
+							player.setPositionAndUpdate(bedX + 0.5, bedY + 1, bedZ + 0.5);
+							itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
+							itemStack.stackTagCompound.setBoolean("locationSet", false);
+							// informs player of broken link
+							player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneMissingBed.txt"));
+						}
+					}
+					// on cooldown
 					else
-						player.travelToDimension(0);
-					
-					player.setPositionAndUpdate(bedCoords.posX + .5, bedCoords.posY + 1, bedCoords.posZ + .5);
-					itemStack.stackTagCompound.setInteger("cooldown", maxCooldown);
+					{
+						player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneOnCooldown.txt"));
+					}
 				}
-				
+				// location is not set
 				else
 				{
-					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneOnCooldown.txt"));
+					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneNoBed.txt"));
 				}
-				return itemStack;
-			}
-			else
-			{
-				player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneNoBed.txt"));
-				return itemStack;
 			}
 		}
-		else
-			return itemStack;
-    }
+		return itemStack;
+	}
 	
-	public int getMaxItemUseDuration(ItemStack itemStack)
-    {
-        return 100;
-    }
-	
-	public boolean showDurabilityBar(ItemStack itemStack)
-    {
-		if(itemStack.stackTagCompound != null)
-			return itemStack.stackTagCompound.getInteger("castTime") > 0 || itemStack.stackTagCompound.getInteger("cooldown") > 0;
+	public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int metadata,
+			float sideX, float sideY, float sideZ)
+	{
+		if(!world.isRemote)
+		{
+			// sneaking and hearthstone is not linked
+			if(player.isSneaking() && !itemStack.stackTagCompound.getBoolean("locationSet"))
+			{
+				// checks if block right clicked is bed, then links hearthstone
+				if(world.getBlock(x, y, z).isBed(world, x, y, z, player))
+				{
+					itemStack.stackTagCompound.setInteger("bedX", x);
+					itemStack.stackTagCompound.setInteger("bedY", y);
+					itemStack.stackTagCompound.setInteger("bedZ", z);
+					itemStack.stackTagCompound.setInteger("bedDimension", player.dimension);
+					itemStack.stackTagCompound.setBoolean("locationSet", true);
+					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneLinked.txt"));
+				}
+			}
+			return true;
+		}
 		else
 			return false;
-    }
-	
-	public double getDurabilityForDisplay(ItemStack itemStack)
-    {
-		if(itemStack.stackTagCompound.getInteger("cooldown") > 0)
-			return (double)itemStack.stackTagCompound.getInteger("cooldown") / (double)maxCooldown;
-		else
-			return (double)itemStack.stackTagCompound.getInteger("castTime") / (double)maxCastTime;
-    }
+	}
 	
 	/*
-	public EnumAction getItemUseAction(ItemStack itemStack)
-    {
-        return EnumAction.bow;
-    }
-    */
+	 * public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player)
+	 * {
+	 * if(!world.isRemote)
+	 * {
+	 * if(!player.isSneaking())
+	 * {
+	 * ChunkCoordinates bedCoords = player.getBedLocation(0);
+	 * if(bedCoords != null)
+	 * {
+	 * if(itemStack.stackTagCompound.getInteger("cooldown") == 0)
+	 * {
+	 * if(player.dimension == 0)
+	 * itemStack.stackTagCompound.setInteger("distance",
+	 * (int) (itemStack.stackTagCompound.getInteger("distance") + (player.getDistance(bedCoords.posX + .5, bedCoords.posY +
+	 * 1, bedCoords.posZ + .5))));
+	 * else
+	 * player.travelToDimension(0);
+	 * 
+	 * player.setPositionAndUpdate(bedCoords.posX + .5, bedCoords.posY + 1, bedCoords.posZ + .5);
+	 * itemStack.stackTagCompound.setInteger("cooldown", maxCooldown);
+	 * }
+	 * 
+	 * else
+	 * {
+	 * player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneOnCooldown.txt"));
+	 * }
+	 * return itemStack;
+	 * }
+	 * else
+	 * {
+	 * player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneNoBed.txt"));
+	 * return itemStack;
+	 * }
+	 * }
+	 * else
+	 * {
+	 * 
+	 * }
+	 * }
+	 * else
+	 * return itemStack;
+	 * }
+	 */
+	
+	public int getMaxItemUseDuration(ItemStack itemStack)
+	{
+		return 100;
+	}
+	
+	public boolean showDurabilityBar(ItemStack itemStack)
+	{
+		if(itemStack.stackTagCompound != null)
+			return itemStack.stackTagCompound.getInteger("cooldown") > 0;
+		else
+			return false;
+	}
+	
+	public double getDurabilityForDisplay(ItemStack itemStack)
+	{
+		return (double) itemStack.stackTagCompound.getInteger("cooldown") / (double) maxCooldown;
+	}
+	
+	/*
+	 * public EnumAction getItemUseAction(ItemStack itemStack)
+	 * {
+	 * return EnumAction.bow;
+	 * }
+	 */
 	
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean par4)
 	{
@@ -124,19 +257,20 @@ public class ItemHearthstone extends Item
 			float minutesExact, secondsExact;
 			int minutes, seconds;
 			minutesExact = cooldown / 1200;
-			minutes = (int)minutesExact;
+			minutes = (int) minutesExact;
 			secondsExact = cooldown / 20;
-			seconds = (int)(secondsExact - (minutes * 60));
+			seconds = (int) (secondsExact - (minutes * 60));
 			list.add("Cooldown: " + minutes + " minutes " + seconds + " seconds");
-			list.add("Distance teleported: " + itemStack.stackTagCompound.getInteger("distance"));
+			// list.add("Distance teleported: " + itemStack.stackTagCompound.getInteger("distance"));
 			/*
 			 * sprinting adds .1 exhaustion per meter, jumping adds .2 exhaustion
-			 * assuming the player jumps often while traveling, every 5m traveled adds ~.7 exhaustion, or .14 exhaustion per meter
+			 * assuming the player jumps often while traveling, every 5m traveled adds ~.7 exhaustion, or .14 exhaustion per
+			 * meter
 			 * every 4.0 exhaustion subtracts 1 point of saturation, so every 28.57m consumes 1 saturation (4.0/.14)
 			 * steak adds 12.8 saturation, so traveling 365.71m consumes a steak's worth of saturation (28.57*12.8)
 			 * distance traveled * (1/365.71) gives the number of steaks that would be used to travel that distance
 			 */
-			list.add("Steaks saved: " + df.format(itemStack.stackTagCompound.getInteger("distance") * .002734));
+			// list.add("Steaks saved: " + df.format(itemStack.stackTagCompound.getInteger("distance") * .002734));
 		}
 	}
 }

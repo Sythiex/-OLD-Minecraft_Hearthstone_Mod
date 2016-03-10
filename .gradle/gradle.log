@@ -14,16 +14,16 @@ Note: C:\Users\Aaron\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build\s
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData
+:extractMcpData UP-TO-DATE
 :getVersionJson
-:extractUserDev
+:extractUserDev UP-TO-DATE
 :genSrgs SKIPPED
 :reobf
 :assemble
@@ -32,4 +32,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 18.615 secs
+Total time: 17.507 secs
