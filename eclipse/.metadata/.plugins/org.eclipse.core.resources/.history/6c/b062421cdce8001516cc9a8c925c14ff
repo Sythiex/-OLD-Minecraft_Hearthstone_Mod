@@ -1,0 +1,5 @@
+{
+    "hearthstoneChannel.wav": {"category": "master","sounds": [{"name": "hearthstoneChannel.wav","stream": false,"type": "event"}]},
+    "hearthstoneCast.wav": {"category": "master","sounds": [{"name": "hearthstoneCast.wav","stream": false,"type": "event"}]},
+    "hearthstoneImpact.wav": {"category": "master","sounds": [{"name": "hearthstoneImpact.wav","stream": false,"type": "event"}]},
+}

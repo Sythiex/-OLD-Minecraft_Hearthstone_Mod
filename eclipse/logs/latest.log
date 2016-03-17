@@ -1,32 +1,11 @@
-[18:56:07] [main/INFO]: Setting user: Player334
-[18:56:10] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:56:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[18:56:19] [Sound Library Loader/INFO]: Sound engine started
-[18:56:21] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:56:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:56:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[18:56:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:56:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:56:23] [Sound Library Loader/INFO]: Sound engine started
-[18:56:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:56:37] [Server thread/INFO]: Generating keypair
-[18:56:38] [Server thread/INFO]: Preparing start region for level 0
-[18:56:39] [Server thread/INFO]: Preparing spawn area: 56%
-[18:56:39] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:56:40] [Server thread/INFO]: Player334[local:E:305dc3d1] logged in with entity id 294 at (-24.5, 78.0, 237.5)
-[18:56:40] [Server thread/INFO]: Player334 joined the game
-[18:56:44] [Server thread/INFO]: Player334 has just earned the achievement [Taking Inventory]
-[18:56:44] [Client thread/INFO]: [CHAT] Player334 has just earned the achievement [Taking Inventory]
-[18:56:52] [Client thread/INFO]: [CHAT] Hearthstone is not linked to a bed!
-[18:56:53] [Client thread/INFO]: [CHAT] Hearthstone is now linked
-[18:57:15] [Server thread/INFO]: Saving and pausing game...
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:57:15] [Server thread/INFO]: Stopping server
-[18:57:15] [Server thread/INFO]: Saving players
-[18:57:15] [Server thread/INFO]: Saving worlds
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:57:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:57:17] [Client thread/INFO]: Stopping!
+[10:28:44] [main/INFO]: Setting user: Player123
+[10:28:46] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:28:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[10:28:53] [Sound Library Loader/INFO]: Sound engine started
+[10:28:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:28:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:28:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[10:28:56] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:28:56] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:28:57] [Sound Library Loader/INFO]: Sound engine started
+[10:30:21] [Client thread/INFO]: Stopping!

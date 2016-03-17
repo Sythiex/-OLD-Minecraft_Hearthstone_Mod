@@ -1,0 +1,18 @@
+package com.sythiex.hearthstonemod;
+
+import net.minecraft.client.audio.MovingSound;
+import net.minecraft.util.ResourceLocation;
+
+public class MovingSoundEntity extends MovingSound
+{
+	protected MovingSoundEntity(ResourceLocation resourceLocation)
+	{
+		super(resourceLocation);
+	}
+
+	@Override
+	public void update()
+	{
+		
+	}
+}

@@ -1,0 +1,58 @@
+package com.sythiex.hearthstonemod;
+
+import net.minecraft.client.audio.MovingSound;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.ResourceLocation;
+
+public class MovingSoundEntity extends MovingSound
+{
+	private final Entity entity;
+	private static int maxPlayTime = ItemHearthstone.maxCastTime; // 10sec
+	private double prevX = 0;
+	private double prevY = 0;
+	private double prevZ = 0;
+	
+	public MovingSoundEntity(Entity entity, ResourceLocation resourceLocation)
+	{
+		super(resourceLocation);
+		this.entity = entity;
+		this.prevX = entity.posX;
+		this.prevY = entity.posY;
+		this.prevZ = entity.posZ;
+		this.repeat = true;
+		this.field_147665_h = 0; // repeat delay
+	}
+	
+	@Override
+	public void update()
+	{
+		if(!ItemHearthstone.channelSoundPlaying)
+		{
+			System.out.println("ending sound");
+			this.donePlaying = true;
+		}
+		else
+		{
+		
+		}
+		/*
+		 * else
+		 * {
+		 * double diffX = Math.abs(prevX - entity.posX);
+		 * double diffY = Math.abs(prevY - entity.posY);
+		 * double diffZ = Math.abs(prevZ - entity.posZ);
+		 * 
+		 * // if player moves cancel cast
+		 * if(diffX > 0.05 || diffY > 0.05 || diffZ > 0.05)
+		 * {
+		 * this.donePlaying = true;
+		 * }
+		 * 
+		 * prevX = entity.posX;
+		 * prevY = entity.posY;
+		 * prevZ = entity.posZ;
+		 * }
+		 */
+	}
+}

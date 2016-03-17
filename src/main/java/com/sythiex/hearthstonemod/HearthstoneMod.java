@@ -9,6 +9,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
@@ -16,7 +17,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class HearthstoneMod
 {
 	public static final String MODID = "hearthstonemod";
-    public static final String VERSION = "0.2.0";
+    public static final String VERSION = "0.2.1";
     
     public static boolean difficulty;
 	
@@ -36,6 +37,8 @@ public class HearthstoneMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+    	MinecraftForge.EVENT_BUS.register(new HearthstoneEventHandler());
+    	
     	hearthstone = new ItemHearthstone();
     	GameRegistry.registerItem(hearthstone, MODID + "_hearthstone");
     	

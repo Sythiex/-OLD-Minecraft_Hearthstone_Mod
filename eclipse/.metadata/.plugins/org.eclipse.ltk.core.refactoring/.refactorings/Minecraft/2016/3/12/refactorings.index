@@ -1,0 +1,7 @@
+1457876668980	Rename local variable 'p_i45104_1_'
+1457879965589	Rename field 'soundPlaying'
+1457880017987	Rename field 'castSoundPlaying'
+1457882946992	Rename type 'MovingSoundEntity'
+1457883839015	Rename field 'channelSoundPlaying'
+1457884751379	Rename local variable 'castSound'
+1458161345105	Rename type 'EventHandler'

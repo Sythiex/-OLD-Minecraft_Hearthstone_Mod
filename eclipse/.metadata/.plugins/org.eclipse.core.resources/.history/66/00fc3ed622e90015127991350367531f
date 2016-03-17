@@ -1,0 +1,24 @@
+package com.sythiex.hearthstonemod;
+
+import net.minecraft.client.audio.MovingSound;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+
+public class MovingSoundEntity extends MovingSound
+{
+	private final Entity entity;
+	
+	public MovingSoundEntity(Entity entity, ResourceLocation resourceLocation)
+	{
+		super(resourceLocation);
+		this.entity = entity;
+		this.repeat = true;
+		this.field_147665_h = 0; // repeat delay
+	}
+	
+	@Override
+	public void update()
+	{
+	
+	}
+}
