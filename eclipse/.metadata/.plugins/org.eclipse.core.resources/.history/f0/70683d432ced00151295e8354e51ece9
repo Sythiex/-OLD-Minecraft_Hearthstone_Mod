@@ -1,0 +1,19 @@
+package com.sythiex.hearthstonemod;
+
+import net.minecraft.client.particle.EntityAuraFX;
+import net.minecraft.client.particle.EntityFX;
+import net.minecraft.world.World;
+
+public class EntityParticleChannelLeaf extends EntityAuraFX
+{
+	public EntityParticleChannelLeaf(World world, double x, double y, double z, double motionX, double motionY, double motionZ)
+	{
+		super(world, x, y, z, motionX, motionY, motionZ);
+		this.setParticleTextureIndex(0);
+		this.particleScale = 2.0F;
+		this.setRBGColorF(0x88, 0x00, 0x88);
+		this.motionX = 1.0D;
+		this.motionY = 1.0D;
+		this.motionZ = 1.0D;
+	}
+}

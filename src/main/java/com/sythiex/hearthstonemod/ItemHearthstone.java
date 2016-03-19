@@ -75,10 +75,14 @@ public class ItemHearthstone extends Item
 				int castTime = itemStack.stackTagCompound.getInteger("castTime") + 1;
 				itemStack.stackTagCompound.setInteger("castTime", castTime);
 				
+				if(player.ticksExisted % 5 == 0)
+				{
+					HearthstoneMod.proxy.generateChannelParticles(player);
+				}
+				
 				double diffX = Math.abs(prevX - player.posX);
 				double diffY = Math.abs(prevY - player.posY);
 				double diffZ = Math.abs(prevZ - player.posZ);
-				
 				// if player moves cancel cast
 				if(((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0) || castFlag)
 				{

@@ -1,0 +1,14 @@
+package com.sythiex.hearthstonemod;
+
+import net.minecraft.client.particle.EntityFX;
+import net.minecraft.world.World;
+
+public class EntityParticleChannelLeaf extends EntityFX
+{
+	public EntityParticleChannelLeaf(World world, double x, double y, double z, double motionX, double motionY, double motionZ)
+	{
+		super(world, x, y, z, motionX, motionY, motionZ);
+		this.setParticleTextureIndex(0);
+		this.particleScale = 1.0F;
+	}
+}

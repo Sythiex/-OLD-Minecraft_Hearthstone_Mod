@@ -1,0 +1,25 @@
+package com.sythiex.hearthstonemod.proxy;
+
+import com.sythiex.hearthstonemod.EntityParticleChannelLeaf;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.EntityFX;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class ClientProxy extends CommonProxy
+{
+	@Override
+	public void generateChannelParticles(EntityPlayer entity)
+	{
+		double motionX = entity.worldObj.rand.nextGaussian() * 0.02D;
+		double motionY = entity.worldObj.rand.nextGaussian() * 0.02D;
+		double motionZ = entity.worldObj.rand.nextGaussian() * 0.02D;
+		
+		EntityFX particleLeaf1 = new EntityParticleChannelLeaf(entity, entity.worldObj,
+				entity.posX + entity.worldObj.rand.nextFloat() * entity.width * 2.0F - entity.width,
+				entity.posY + 0.5D + entity.worldObj.rand.nextFloat() * entity.height,
+				entity.posZ + entity.worldObj.rand.nextFloat() * entity.width * 2.0F - entity.width, motionX, motionY, motionZ);
+		Minecraft.getMinecraft().effectRenderer.addEffect(particleLeaf1);
+	}
+}
