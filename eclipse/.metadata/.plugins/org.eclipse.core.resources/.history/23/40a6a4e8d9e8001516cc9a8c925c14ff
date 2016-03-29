@@ -1,5 +1,0 @@
-{
-"hearthstoneChannel": {"category": "master","sounds": [{"name": "hearthstoneChannel","stream": false}]},
-"hearthstoneCast": {"category": "master","sounds": [{"name": "hearthstoneCast","stream": false}]},
-"hearthstoneImpact": {"category": "master","sounds": [{"name": "hearthstoneImpact","stream": false}]},
-}
