@@ -1,37 +1,33 @@
-[21:20:10] [main/INFO]: Setting user: Player434
-[21:20:12] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:20:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[21:20:19] [Sound Library Loader/INFO]: Sound engine started
-[21:20:23] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:20:23] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:20:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[21:20:24] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:20:24] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:20:25] [Sound Library Loader/INFO]: Sound engine started
-[21:20:30] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:20:30] [Server thread/INFO]: Generating keypair
-[21:20:30] [Server thread/INFO]: Preparing start region for level 0
-[21:20:31] [Server thread/INFO]: Preparing spawn area: 75%
-[21:20:32] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:20:32] [Server thread/INFO]: Player434[local:E:4c99437a] logged in with entity id 569 at (220.25690912056223, 64.0, -67.14312301297255)
-[21:20:32] [Server thread/INFO]: Player434 joined the game
-[21:20:41] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:20:43] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:20:48] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:20:53] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:21:04] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:21:13] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[21:21:34] [Server thread/INFO]: Player434 has just earned the achievement [Taking Inventory]
-[21:21:34] [Client thread/INFO]: [CHAT] Player434 has just earned the achievement [Taking Inventory]
-[21:21:38] [Client thread/INFO]: [CHAT] Hearthstone is now linked
-[21:21:46] [Server thread/INFO]: Saving and pausing game...
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:21:46] [Server thread/INFO]: Stopping server
-[21:21:46] [Server thread/INFO]: Saving players
-[21:21:46] [Server thread/INFO]: Saving worlds
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:21:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:21:47] [Client thread/INFO]: Stopping!
+[16:58:31] [main/INFO]: Setting user: Player118
+[16:58:32] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:58:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[16:58:38] [Sound Library Loader/INFO]: Sound engine started
+[16:58:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:58:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:58:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[16:58:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:58:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:58:41] [Sound Library Loader/INFO]: Sound engine started
+[16:58:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:58:43] [Server thread/INFO]: Generating keypair
+[16:58:44] [Server thread/INFO]: Preparing start region for level 0
+[16:58:45] [Server thread/INFO]: Preparing spawn area: 73%
+[16:58:45] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:58:46] [Server thread/INFO]: Player118[local:E:9b350f68] logged in with entity id 316 at (222.86561434976377, 64.0, -67.54280269077825)
+[16:58:46] [Server thread/INFO]: Player118 joined the game
+[16:58:46] [Server thread/INFO]: Saving and pausing game...
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:59:02] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[16:59:03] [Server thread/INFO]: Saving and pausing game...
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:59:04] [Server thread/INFO]: Stopping server
+[16:59:04] [Server thread/INFO]: Saving players
+[16:59:04] [Server thread/INFO]: Saving worlds
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:59:04] [Client thread/INFO]: Stopping!
