@@ -224,7 +224,7 @@ public class ItemHearthstone extends Item
 		if(!world.isRemote)
 		{
 			// sneaking and hearthstone is not linked
-			if(player.isSneaking() && !itemStack.stackTagCompound.getBoolean("locationSet"))
+			if(player.isSneaking())
 			{
 				// checks if block right clicked is bed, then links hearthstone
 				if(world.getBlock(x, y, z).isBed(world, x, y, z, player))

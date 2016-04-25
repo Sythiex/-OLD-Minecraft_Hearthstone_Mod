@@ -1,33 +1,11 @@
-[16:58:31] [main/INFO]: Setting user: Player118
-[16:58:32] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:58:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[16:58:38] [Sound Library Loader/INFO]: Sound engine started
-[16:58:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:58:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:58:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[16:58:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:58:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:58:41] [Sound Library Loader/INFO]: Sound engine started
-[16:58:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:58:43] [Server thread/INFO]: Generating keypair
-[16:58:44] [Server thread/INFO]: Preparing start region for level 0
-[16:58:45] [Server thread/INFO]: Preparing spawn area: 73%
-[16:58:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:58:46] [Server thread/INFO]: Player118[local:E:9b350f68] logged in with entity id 316 at (222.86561434976377, 64.0, -67.54280269077825)
-[16:58:46] [Server thread/INFO]: Player118 joined the game
-[16:58:46] [Server thread/INFO]: Saving and pausing game...
-[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:59:02] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[16:59:03] [Server thread/INFO]: Saving and pausing game...
-[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:59:04] [Server thread/INFO]: Stopping server
-[16:59:04] [Server thread/INFO]: Saving players
-[16:59:04] [Server thread/INFO]: Saving worlds
-[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:59:04] [Client thread/INFO]: Stopping!
+[01:05:21] [main/INFO]: Setting user: Player913
+[01:05:22] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:05:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[01:05:28] [Sound Library Loader/INFO]: Sound engine started
+[01:05:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[01:05:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[01:05:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[01:05:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[01:05:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[01:05:31] [Sound Library Loader/INFO]: Sound engine started
+[01:07:26] [Client thread/INFO]: Stopping!

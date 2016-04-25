@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hearthstonemod",
+  "name": "Hearthstone Mod",
+  "description": "Adds an item that allows the player to teleport to their bed.",
+  "version": "0.2.2",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sythiex"],
+  "credits": "Element_31 for the idea, and Zodiac17 for suggestions",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
