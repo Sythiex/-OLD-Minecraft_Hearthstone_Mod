@@ -1,0 +1,10 @@
+Symbol range map extraction starting
+Processing 8 files
+processing com\sythiex\hearthstonemod\EntityParticleChannelLeaf.java
+processing com\sythiex\hearthstonemod\HearthstoneEventHandler.java
+processing com\sythiex\hearthstonemod\HearthstoneMod.java
+processing com\sythiex\hearthstonemod\ItemHearthstone.java
+processing com\sythiex\hearthstonemod\TargetedEntitySound.java
+processing com\sythiex\hearthstonemod\proxy\ClientProxy.java
+processing com\sythiex\hearthstonemod\proxy\CommonProxy.java
+processing com\sythiex\hearthstonemod\proxy\ServerProxy.java

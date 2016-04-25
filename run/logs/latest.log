@@ -1,0 +1,82 @@
+[12:22:55] [Client thread/INFO]: Setting user: Player555
+[12:22:59] [Client thread/INFO]: LWJGL Version: 2.9.4
+[12:23:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[12:23:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:23:07] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[12:23:07] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:23:08] [Thread-8/INFO]: OpenAL initialized.
+[12:23:08] [Sound Library Loader/INFO]: Sound engine started
+[12:23:16] [Client thread/INFO]: Created: 16x16 textures-atlas
+[12:23:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[12:23:17] [Client thread/INFO]: SoundSystem shutting down...
+[12:23:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[12:23:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:23:18] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[12:23:18] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:23:18] [Thread-10/INFO]: OpenAL initialized.
+[12:23:18] [Sound Library Loader/INFO]: Sound engine started
+[12:23:24] [Client thread/INFO]: Created: 512x512 textures-atlas
+[12:23:25] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[12:23:37] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[12:23:37] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[12:23:37] [Server thread/INFO]: Generating keypair
+[12:23:37] [Server thread/INFO]: Converting map!
+[12:23:37] [Server thread/INFO]: Scanning folders...
+[12:23:37] [Server thread/INFO]: Total conversion count is 0
+[12:23:37] [Server thread/INFO]: Preparing start region for level 0
+[12:23:38] [Server thread/INFO]: Preparing spawn area: 6%
+[12:23:39] [Server thread/INFO]: Preparing spawn area: 12%
+[12:23:40] [Server thread/INFO]: Preparing spawn area: 20%
+[12:23:42] [Server thread/INFO]: Preparing spawn area: 29%
+[12:23:43] [Server thread/INFO]: Preparing spawn area: 40%
+[12:23:44] [Server thread/INFO]: Preparing spawn area: 50%
+[12:23:45] [Server thread/INFO]: Preparing spawn area: 62%
+[12:23:46] [Server thread/INFO]: Preparing spawn area: 72%
+[12:23:47] [Server thread/INFO]: Preparing spawn area: 83%
+[12:23:48] [Server thread/INFO]: Preparing spawn area: 95%
+[12:23:48] [Server thread/INFO]: Changing view distance to 12, from 10
+[12:23:48] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[12:23:49] [Server thread/INFO]: Player555[local:E:a153221e] logged in with entity id 291 at (-190.5, 73.0, 250.5)
+[12:23:49] [Server thread/INFO]: Player555 joined the game
+[12:23:51] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@79389c3a[id=0ee0c13d-70e5-3031-ae99-c5b7b6d44331,name=Player555,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.func_181037_M(Minecraft.java:2915) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:130) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_05]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_05]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_05]
+[12:23:52] [Server thread/INFO]: Player555 has just earned the achievement [Taking Inventory]
+[12:23:53] [Client thread/INFO]: [CHAT] Player555 has just earned the achievement [Taking Inventory]
+[12:23:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2918ms behind, skipping 58 tick(s)
+[12:24:01] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[12:24:02] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[12:24:04] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[12:24:24] [Server thread/INFO]: Saving and pausing game...
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:24:24] [Server thread/INFO]: Stopping server
+[12:24:24] [Server thread/INFO]: Saving players
+[12:24:24] [Server thread/INFO]: Saving worlds
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:24:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:24:27] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[12:24:27] [Client thread/INFO]: Stopping!
+[12:24:27] [Client thread/INFO]: SoundSystem shutting down...
+[12:24:27] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

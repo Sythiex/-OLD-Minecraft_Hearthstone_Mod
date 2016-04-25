@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hearthstonemod",
+  "name": "Hearthstone Mod",
+  "description": "",
+  "version": "0.2.2",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sythiex"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
