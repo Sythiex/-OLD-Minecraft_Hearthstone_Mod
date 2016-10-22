@@ -31,7 +31,7 @@ public class ItemHearthstone extends Item
 	private double prevY = 0;
 	private double prevZ = 0;
 	
-	public TargetedEntitySound channelSound;
+	// public TargetedEntitySound channelSound;
 	
 	public ItemHearthstone()
 	{
@@ -87,7 +87,7 @@ public class ItemHearthstone extends Item
 				// if player moves cancel cast
 				if(((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0) || castFlag)
 				{
-					Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
+					// Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
 					tagCompound.setInteger("castTime", 0);
 					tagCompound.setBoolean("isCasting", false);
 					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneCastCanceled.txt"));
@@ -101,7 +101,7 @@ public class ItemHearthstone extends Item
 				// initiate tp after casting
 				if(tagCompound.getInteger("castTime") >= maxCastTime)
 				{
-					Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
+					// Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
 					tagCompound.setInteger("castTime", 0);
 					tagCompound.setBoolean("isCasting", false);
 					
@@ -203,8 +203,9 @@ public class ItemHearthstone extends Item
 						if(!tagCompound.getBoolean("isCasting"))
 						{
 							tagCompound.setBoolean("isCasting", true);
-							channelSound = new TargetedEntitySound(player, new ResourceLocation("hearthstonemod:hearthstoneChannel"));
-							Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
+							// channelSound = new TargetedEntitySound(player, new
+							// ResourceLocation("hearthstonemod:hearthstoneChannel"));
+							// Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
 						}
 					}
 					// on cooldown

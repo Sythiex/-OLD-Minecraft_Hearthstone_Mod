@@ -1,6 +1,6 @@
 package com.sythiex.hearthstonemod.proxy;
 
-public class ServerProxy
+public class ServerProxy extends CommonProxy
 {
 	
 }
