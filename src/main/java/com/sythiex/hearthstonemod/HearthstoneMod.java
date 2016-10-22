@@ -23,7 +23,7 @@ public class HearthstoneMod
 	public static CommonProxy proxy;
 	
 	public static final String MODID = "hearthstonemod";
-	public static final String VERSION = "0.2.3";
+	public static final String VERSION = "0.3.0";
 	
 	public static boolean difficulty;
 	
@@ -37,7 +37,7 @@ public class HearthstoneMod
 		
 		difficulty = config.getBoolean("Easy Recipe", config.CATEGORY_GENERAL, false,
 				"Change to true to use lapis instead of diamonds in the Hearthstone recipe");
-				
+		
 		config.save();
 	}
 	

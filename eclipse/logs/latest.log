@@ -1,11 +1,36 @@
-[01:05:21] [main/INFO]: Setting user: Player913
-[01:05:22] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:05:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[01:05:28] [Sound Library Loader/INFO]: Sound engine started
-[01:05:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:05:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[01:05:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[01:05:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:05:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[01:05:31] [Sound Library Loader/INFO]: Sound engine started
-[01:07:26] [Client thread/INFO]: Stopping!
+[14:53:26] [main/INFO]: Setting user: Player149
+[14:53:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:53:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[14:53:38] [Sound Library Loader/INFO]: Sound engine started
+[14:53:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:53:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:53:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[14:53:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:53:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:53:41] [Sound Library Loader/INFO]: Sound engine started
+[14:54:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:54:08] [Server thread/INFO]: Generating keypair
+[14:54:08] [Server thread/INFO]: Preparing start region for level 0
+[14:54:09] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:54:10] [Server thread/INFO]: Player149[local:E:4a737d74] logged in with entity id 383 at (117.0585708923067, 68.0, 241.08169667076658)
+[14:54:10] [Server thread/INFO]: Player149 joined the game
+[14:54:10] [Server thread/INFO]: Saving and pausing game...
+[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:54:12] [Server thread/INFO]: Player149 has just earned the achievement [Taking Inventory]
+[14:54:12] [Client thread/INFO]: [CHAT] Player149 has just earned the achievement [Taking Inventory]
+[14:54:15] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[14:54:16] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[14:54:21] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[14:54:23] [Server thread/INFO]: Saving and pausing game...
+[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:54:28] [Server thread/INFO]: Stopping server
+[14:54:28] [Server thread/INFO]: Saving players
+[14:54:28] [Server thread/INFO]: Saving worlds
+[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:54:29] [Client thread/INFO]: Stopping!
