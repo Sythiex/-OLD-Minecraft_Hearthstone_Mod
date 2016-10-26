@@ -25,10 +25,12 @@
 <fullyQualifiedTypeName name="net.minecraft.client.particle.EntityFX"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.EntityParticleChannelLeaf"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="com.sythiex.hearthstonemod.HearthstoneMod"/>
 <fullyQualifiedTypeName name="net.minecraft.client.particle.EntityAuraFX"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.audio.PositionedSound"/>
+<fullyQualifiedTypeName name="com.sythiex.hearthstonemod.HearthstoneMod"/>
+<fullyQualifiedTypeName name="net.minecraft.client.audio.ISound"/>
 </qualifiedTypeNameHistroy>

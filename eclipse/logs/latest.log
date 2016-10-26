@@ -1,36 +1,43 @@
-[14:53:26] [main/INFO]: Setting user: Player149
-[14:53:27] [Client thread/INFO]: LWJGL Version: 2.9.1
-[14:53:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[14:53:38] [Sound Library Loader/INFO]: Sound engine started
-[14:53:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[14:53:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[14:53:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[14:53:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[14:53:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[14:53:41] [Sound Library Loader/INFO]: Sound engine started
-[14:54:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:54:08] [Server thread/INFO]: Generating keypair
-[14:54:08] [Server thread/INFO]: Preparing start region for level 0
-[14:54:09] [Server thread/INFO]: Changing view distance to 12, from 10
-[14:54:10] [Server thread/INFO]: Player149[local:E:4a737d74] logged in with entity id 383 at (117.0585708923067, 68.0, 241.08169667076658)
-[14:54:10] [Server thread/INFO]: Player149 joined the game
-[14:54:10] [Server thread/INFO]: Saving and pausing game...
-[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:54:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:54:12] [Server thread/INFO]: Player149 has just earned the achievement [Taking Inventory]
-[14:54:12] [Client thread/INFO]: [CHAT] Player149 has just earned the achievement [Taking Inventory]
-[14:54:15] [Client thread/INFO]: [CHAT] Hearthstone is now linked
-[14:54:16] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[14:54:21] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[14:54:23] [Server thread/INFO]: Saving and pausing game...
-[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:54:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:54:28] [Server thread/INFO]: Stopping server
-[14:54:28] [Server thread/INFO]: Saving players
-[14:54:28] [Server thread/INFO]: Saving worlds
-[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:54:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:54:29] [Client thread/INFO]: Stopping!
+[17:47:43] [main/INFO]: Setting user: Player974
+[17:47:45] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:47:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[17:47:55] [Sound Library Loader/INFO]: Sound engine started
+[17:47:56] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
+[17:47:56] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
+[17:47:56] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
+[17:47:57] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:47:57] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:47:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[17:47:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:47:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:47:59] [Sound Library Loader/INFO]: Sound engine started
+[17:48:00] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
+[17:48:00] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
+[17:48:00] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
+[17:48:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:48:27] [Server thread/INFO]: Generating keypair
+[17:48:28] [Server thread/INFO]: Preparing start region for level 0
+[17:48:29] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:48:30] [Server thread/INFO]: Player974[local:E:7af6683e] logged in with entity id 374 at (115.5, 68.0, 242.5)
+[17:48:30] [Server thread/INFO]: Player974 joined the game
+[17:48:31] [Server thread/INFO]: Saving and pausing game...
+[17:48:31] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:48:31] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:48:31] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:49:52] [Client thread/INFO]: [CHAT] Hearthstone is on cooldown!
+[17:49:53] [Server thread/INFO]: Player974 has just earned the achievement [Taking Inventory]
+[17:49:54] [Client thread/INFO]: [CHAT] Player974 has just earned the achievement [Taking Inventory]
+[17:49:59] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[17:49:59] [Server thread/WARN]: Unable to play empty soundEvent: hearthstonemod:hearthstoneChannel
+[17:50:02] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[17:50:03] [Server thread/INFO]: Saving and pausing game...
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:50:03] [Server thread/INFO]: Stopping server
+[17:50:03] [Server thread/INFO]: Saving players
+[17:50:03] [Server thread/INFO]: Saving worlds
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:50:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:50:05] [Client thread/INFO]: Stopping!

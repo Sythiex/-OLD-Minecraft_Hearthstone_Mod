@@ -8,6 +8,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.ISound;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -28,15 +29,14 @@ public class ItemHearthstone extends Item
 	public static int maxCastTime = 200; // 10sec
 	
 	private boolean castFlag = false; // used to stop casting
-	private boolean playCastSound = false;
+	private boolean playSound = false;
 	private boolean isSoundPlaying = false;
+	
+	private ISound channelSound;
 	
 	private double prevX = 0;
 	private double prevY = 0;
 	private double prevZ = 0;
-	
-	// @SideOnly(Side.CLIENT)
-	// public TargetedEntitySound channelSound;
 	
 	public ItemHearthstone()
 	{
@@ -92,7 +92,7 @@ public class ItemHearthstone extends Item
 				// if player moves cancel cast
 				if(((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0) || castFlag)
 				{
-					this.playCastSound = false;
+					this.playSound = false;
 					itemStack.stackTagCompound.setInteger("castTime", 0);
 					itemStack.stackTagCompound.setBoolean("isCasting", false);
 					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneCastCanceled.txt"));
@@ -106,7 +106,7 @@ public class ItemHearthstone extends Item
 				// initiate tp after casting
 				if(itemStack.stackTagCompound.getInteger("castTime") >= maxCastTime)
 				{
-					this.playCastSound = false;
+					this.playSound = false;
 					itemStack.stackTagCompound.setInteger("castTime", 0);
 					itemStack.stackTagCompound.setBoolean("isCasting", false);
 					
@@ -162,16 +162,14 @@ public class ItemHearthstone extends Item
 						}
 						
 						world.playSoundEffect(entity.posX, entity.posY, entity.posZ, "hearthstonemod:hearthstoneImpact", 1, 1);
-						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on
-																						// cooldown
+						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
 					}
 					// tps player to where bed was, then breaks link
 					else
 					{
 						player.setPositionAndUpdate(bedX + 0.5, bedY + 1, bedZ + 0.5);
 						world.playSoundEffect(entity.posX, entity.posY, entity.posZ, "hearthstonemod:hearthstoneImpact", 1, 1);
-						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on
-																						// cooldown
+						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
 						itemStack.stackTagCompound.setBoolean("locationSet", false);
 						// informs player of broken link
 						player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneMissingBed.txt"));
@@ -179,25 +177,22 @@ public class ItemHearthstone extends Item
 				}
 			}
 			
+			if(!this.isSoundPlaying && this.playSound)
+			{
+				this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
+				Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
+				this.isSoundPlaying = true;
+			}
+			else if(this.isSoundPlaying && !this.playSound)
+			{
+				Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
+				this.isSoundPlaying = false;
+			}
+			
 			prevX = entity.posX;
 			prevY = entity.posY;
 			prevZ = entity.posZ;
 		}
-		/*
-		 * else
-		 * {
-		 * if(this.playCastSound && !this.isSoundPlaying)
-		 * {
-		 * this.startSound(entity);
-		 * this.isSoundPlaying = true;
-		 * }
-		 * else if(!this.playCastSound && this.isSoundPlaying)
-		 * {
-		 * this.stopSound(entity);
-		 * this.isSoundPlaying = false;
-		 * }
-		 * }
-		 */
 	}
 	
 	@Override
@@ -219,7 +214,7 @@ public class ItemHearthstone extends Item
 						if(!itemStack.stackTagCompound.getBoolean("isCasting"))
 						{
 							itemStack.stackTagCompound.setBoolean("isCasting", true);
-							this.playCastSound = true;
+							this.playSound = true;
 						}
 					}
 					// on cooldown
@@ -263,25 +258,6 @@ public class ItemHearthstone extends Item
 		else
 			return false;
 	}
-	
-	/*
-	 * public void startSound(Entity entity)
-	 * {
-	 * if(entity.worldObj.isRemote)
-	 * {
-	 * channelSound = new TargetedEntitySound(entity, new ResourceLocation("hearthstonemod:hearthstoneChannel"));
-	 * Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
-	 * }
-	 * }
-	 * 
-	 * public void stopSound(Entity entity)
-	 * {
-	 * if(entity.worldObj.isRemote)
-	 * {
-	 * Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
-	 * }
-	 * }
-	 */
 	
 	public void stopCasting()
 	{
