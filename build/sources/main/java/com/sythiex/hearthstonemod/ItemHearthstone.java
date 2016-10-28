@@ -31,8 +31,6 @@ public class ItemHearthstone extends Item
 	private double prevY = 0;
 	private double prevZ = 0;
 	
-	// public TargetedEntitySound channelSound;
-	
 	public ItemHearthstone()
 	{
 		super();

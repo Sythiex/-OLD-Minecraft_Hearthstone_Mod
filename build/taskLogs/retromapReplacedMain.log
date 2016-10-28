@@ -33522,223 +33522,223 @@ Start Processing: com\sythiex\hearthstonemod\ItemHearthstone.java
 Warning: com\sythiex\hearthstonemod\ItemHearthstone.java has CRLF line endings; consider switching to LF
 [method, com/sythiex/hearthstonemod/ItemHearthstone/ItemHearthstone, ()V]
 FOUND CONSTR method com/sythiex/hearthstonemod/ItemHearthstone/ItemHearthstone ()V com/sythiex/hearthstonemod/ItemHearthstone
-Rename method net/minecraft/item/Item/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/item/Item;[1129,1147]::setUnlocalizedName->func_77655_b
-Rename method net/minecraft/item/Item/setMaxStackSize (I)Lnet/minecraft/item/Item;[1160,1175]::setMaxStackSize->func_77625_d
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1179,1193]::setCreativeTab->func_77637_a
-Rename class net/minecraft/creativetab/CreativeTabs[1192,1204]::CreativeTabs->CreativeTabs
-Rename field net/minecraft/creativetab/CreativeTabs/tabTools[1205,1213]::tabTools->field_78040_i
-Rename method net/minecraft/item/Item/onUpdate (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;IZ)V[1250,1258]::onUpdate->func_77663_a
-Rename class net/minecraft/item/ItemStack[1263,1272]::ItemStack->ItemStack
-Rename class net/minecraft/world/World[1284,1289]::World->World
-Rename class net/minecraft/entity/Entity[1297,1303]::Entity->Entity
-Rename field net/minecraft/world/World/isRemote[1363,1371]::isRemote->field_72995_K
-Rename class net/minecraft/nbt/NBTTagCompound[1385,1399]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[1424,1438]::getTagCompound->func_77978_p
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1503,1513]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1590,1600]::setInteger->func_74768_a
-Rename class net/minecraft/nbt/NBTTagCompound[1672,1686]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1706,1716]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1751,1761]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1796,1806]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1837,1847]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1878,1888]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1919,1929]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[1968,1978]::setBoolean->func_74757_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[2020,2030]::setBoolean->func_74757_a
-Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[2127,2137]::getBoolean->func_74767_n
-Rename class net/minecraft/entity/player/EntityPlayer[2174,2186]::EntityPlayer->EntityPlayer
-Rename class net/minecraft/entity/player/EntityPlayer[2197,2209]::EntityPlayer->EntityPlayer
-Rename class net/minecraft/entity/player/EntityPlayer[2220,2232]::EntityPlayer->EntityPlayer
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[2273,2283]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[2319,2329]::setInteger->func_74768_a
-Rename field net/minecraft/entity/Entity/ticksExisted[2374,2386]::ticksExisted->field_70173_aa
+Rename method net/minecraft/item/Item/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/item/Item;[1082,1100]::setUnlocalizedName->func_77655_b
+Rename method net/minecraft/item/Item/setMaxStackSize (I)Lnet/minecraft/item/Item;[1113,1128]::setMaxStackSize->func_77625_d
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1132,1146]::setCreativeTab->func_77637_a
+Rename class net/minecraft/creativetab/CreativeTabs[1145,1157]::CreativeTabs->CreativeTabs
+Rename field net/minecraft/creativetab/CreativeTabs/tabTools[1158,1166]::tabTools->field_78040_i
+Rename method net/minecraft/item/Item/onUpdate (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;IZ)V[1203,1211]::onUpdate->func_77663_a
+Rename class net/minecraft/item/ItemStack[1216,1225]::ItemStack->ItemStack
+Rename class net/minecraft/world/World[1237,1242]::World->World
+Rename class net/minecraft/entity/Entity[1250,1256]::Entity->Entity
+Rename field net/minecraft/world/World/isRemote[1316,1324]::isRemote->field_72995_K
+Rename class net/minecraft/nbt/NBTTagCompound[1338,1352]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[1377,1391]::getTagCompound->func_77978_p
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1456,1466]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1543,1553]::setInteger->func_74768_a
+Rename class net/minecraft/nbt/NBTTagCompound[1625,1639]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1659,1669]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1704,1714]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1749,1759]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1790,1800]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1831,1841]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1872,1882]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[1921,1931]::setBoolean->func_74757_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[1973,1983]::setBoolean->func_74757_a
+Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[2080,2090]::getBoolean->func_74767_n
+Rename class net/minecraft/entity/player/EntityPlayer[2127,2139]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/entity/player/EntityPlayer[2150,2162]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/entity/player/EntityPlayer[2173,2185]::EntityPlayer->EntityPlayer
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[2226,2236]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[2272,2282]::setInteger->func_74768_a
+Rename field net/minecraft/entity/Entity/ticksExisted[2327,2339]::ticksExisted->field_70173_aa
 [method, com/sythiex/hearthstonemod/proxy/CommonProxy/generateChannelParticles, (Lnet/minecraft/entity/player/EntityPlayer;)V]
 [method, java/lang/Math/abs, (D)D]
-Rename field net/minecraft/entity/Entity/posX[2519,2523]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posX[2472,2476]::posX->field_70165_t
 [method, java/lang/Math/abs, (D)D]
-Rename field net/minecraft/entity/Entity/posY[2578,2582]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posY[2531,2535]::posY->field_70163_u
 [method, java/lang/Math/abs, (D)D]
-Rename field net/minecraft/entity/Entity/posZ[2637,2641]::posZ->field_70161_v
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[2870,2880]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[2916,2926]::setBoolean->func_74757_a
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[2962,2976]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentTranslation[2980,3004]::ChatComponentTranslation->ChatComponentTranslation
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3167,3177]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[3307,3317]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3353,3363]::setBoolean->func_74757_a
-Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[3404,3419]::playSoundEffect->func_72908_a
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3518,3528]::getInteger->func_74762_e
-Rename field net/minecraft/entity/Entity/dimension[3652,3661]::dimension->field_71093_bK
-Rename method net/minecraft/entity/Entity/travelToDimension (I)V[3688,3705]::travelToDimension->func_71027_c
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3754,3764]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3804,3814]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3854,3864]::getInteger->func_74762_e
-Rename class net/minecraft/util/BlockPos[3881,3889]::BlockPos->BlockPos
-Rename class net/minecraft/util/BlockPos[3903,3911]::BlockPos->BlockPos
-Rename field net/minecraft/entity/Entity/worldObj[3989,3997]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4003,4016]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4025,4033]::getBlock->func_177230_c
+Rename field net/minecraft/entity/Entity/posZ[2590,2594]::posZ->field_70161_v
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[2823,2833]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[2869,2879]::setBoolean->func_74757_a
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[2915,2929]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentTranslation[2933,2957]::ChatComponentTranslation->ChatComponentTranslation
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3120,3130]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[3260,3270]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3306,3316]::setBoolean->func_74757_a
+Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[3357,3372]::playSoundEffect->func_72908_a
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3471,3481]::getInteger->func_74762_e
+Rename field net/minecraft/entity/Entity/dimension[3605,3614]::dimension->field_71093_bK
+Rename method net/minecraft/entity/Entity/travelToDimension (I)V[3641,3658]::travelToDimension->func_71027_c
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3707,3717]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3757,3767]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3807,3817]::getInteger->func_74762_e
+Rename class net/minecraft/util/BlockPos[3834,3842]::BlockPos->BlockPos
+Rename class net/minecraft/util/BlockPos[3856,3864]::BlockPos->BlockPos
+Rename field net/minecraft/entity/Entity/worldObj[3942,3950]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[3956,3969]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[3978,3986]::getBlock->func_177230_c
 [method, net/minecraft/block/Block/isBed, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/entity/Entity;)Z]
 No rename for method net/minecraft/block/Block/isBed (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/entity/Entity;)Z
-Rename field net/minecraft/entity/Entity/worldObj[4054,4062]::worldObj->field_70170_p
-Rename class net/minecraft/block/material/Material[4099,4107]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4127,4135]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4141,4154]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[4162,4167]::north->func_177978_c
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4179,4187]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4195,4206]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4218,4226]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4246,4254]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4260,4273]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[4281,4286]::north->func_177978_c
-Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4297,4299]::up->func_177984_a
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4314,4322]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4330,4341]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4360,4368]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4388,4396]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4402,4415]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[4423,4427]::east->func_177974_f
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4440,4448]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4456,4467]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4479,4487]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4507,4515]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4521,4534]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[4542,4546]::east->func_177974_f
-Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4558,4560]::up->func_177984_a
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4575,4583]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4591,4602]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4621,4629]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4649,4657]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4663,4676]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[4684,4689]::south->func_177968_d
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4701,4709]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4717,4728]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4740,4748]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4768,4776]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4782,4795]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[4803,4808]::south->func_177968_d
-Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4819,4821]::up->func_177984_a
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4836,4844]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4852,4863]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[4882,4890]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[4910,4918]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4924,4937]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[4945,4949]::west->func_177976_e
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4962,4970]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4978,4989]::getMaterial->func_149688_o
-Rename class net/minecraft/block/material/Material[5001,5009]::Material->Material
-Rename field net/minecraft/entity/Entity/worldObj[5029,5037]::worldObj->field_70170_p
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[5043,5056]::getBlockState->func_180495_p
-Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[5064,5068]::west->func_177976_e
-Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[5080,5082]::up->func_177984_a
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[5097,5105]::getBlock->func_177230_c
-Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[5113,5124]::getMaterial->func_149688_o
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5209,5216]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5238,5246]::isLiquid->func_76224_d
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5267,5274]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5296,5304]::isLiquid->func_76224_d
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5334,5354]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5415,5422]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5444,5452]::isLiquid->func_76224_d
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5473,5480]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5502,5510]::isLiquid->func_76224_d
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5540,5560]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5621,5628]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5650,5658]::isLiquid->func_76224_d
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5679,5686]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5708,5716]::isLiquid->func_76224_d
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5746,5766]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5827,5834]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5856,5864]::isLiquid->func_76224_d
-Rename method net/minecraft/block/material/Material/isSolid ()Z[5885,5892]::isSolid->func_76220_a
-Rename method net/minecraft/block/material/Material/isLiquid ()Z[5914,5922]::isLiquid->func_76224_d
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5952,5972]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[6086,6106]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[6161,6176]::playSoundEffect->func_72908_a
-Rename field net/minecraft/entity/Entity/posX[6181,6185]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[6203,6207]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[6225,6229]::posZ->field_70161_v
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[6301,6311]::setInteger->func_74768_a
-Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[6485,6505]::setPositionAndUpdate->func_70634_a
-Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[6545,6560]::playSoundEffect->func_72908_a
-Rename field net/minecraft/entity/Entity/posX[6565,6569]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[6587,6591]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[6609,6613]::posZ->field_70161_v
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[6685,6695]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[6796,6806]::setBoolean->func_74757_a
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[6884,6898]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentTranslation[6902,6926]::ChatComponentTranslation->ChatComponentTranslation
-Rename field net/minecraft/entity/Entity/posX[7002,7006]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[7035,7039]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[7068,7072]::posZ->field_70161_v
-Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[7100,7114]::setTagCompound->func_77982_d
-Rename class net/minecraft/item/ItemStack[7155,7164]::ItemStack->ItemStack
-Rename method net/minecraft/item/Item/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[7165,7181]::onItemRightClick->func_77659_a
-Rename class net/minecraft/item/ItemStack[7178,7187]::ItemStack->ItemStack
-Rename class net/minecraft/world/World[7199,7204]::World->World
-Rename class net/minecraft/entity/player/EntityPlayer[7212,7224]::EntityPlayer->EntityPlayer
-Rename field net/minecraft/world/World/isRemote[7248,7256]::isRemote->field_72995_K
-Rename class net/minecraft/nbt/NBTTagCompound[7270,7284]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[7309,7323]::getTagCompound->func_77978_p
-Rename method net/minecraft/entity/Entity/isSneaking ()Z[7358,7368]::isSneaking->func_70093_af
-Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7422,7432]::getBoolean->func_74767_n
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[7489,7499]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7637,7647]::getBoolean->func_74767_n
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[7691,7701]::setBoolean->func_74757_a
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[7994,8008]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentTranslation[8012,8036]::ChatComponentTranslation->ChatComponentTranslation
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[8139,8153]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentTranslation[8157,8181]::ChatComponentTranslation->ChatComponentTranslation
-Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[8236,8250]::setTagCompound->func_77982_d
-Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;FFF)Z[8319,8328]::onItemUse->func_180614_a
-Rename class net/minecraft/item/ItemStack[8333,8342]::ItemStack->ItemStack
-Rename class net/minecraft/entity/player/EntityPlayer[8354,8366]::EntityPlayer->EntityPlayer
-Rename class net/minecraft/world/World[8375,8380]::World->World
-Rename class net/minecraft/util/BlockPos[8388,8396]::BlockPos->BlockPos
-Rename class net/minecraft/util/EnumFacing[8407,8417]::EnumFacing->EnumFacing
-Rename field net/minecraft/world/World/isRemote[8481,8489]::isRemote->field_72995_K
-Rename class net/minecraft/nbt/NBTTagCompound[8503,8517]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[8542,8556]::getTagCompound->func_77978_p
-Rename method net/minecraft/entity/Entity/isSneaking ()Z[8616,8626]::isSneaking->func_70093_af
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[8719,8732]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[8743,8751]::getBlock->func_177230_c
+Rename field net/minecraft/entity/Entity/worldObj[4007,4015]::worldObj->field_70170_p
+Rename class net/minecraft/block/material/Material[4052,4060]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4080,4088]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4094,4107]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[4115,4120]::north->func_177978_c
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4132,4140]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4148,4159]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4171,4179]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4199,4207]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4213,4226]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[4234,4239]::north->func_177978_c
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4250,4252]::up->func_177984_a
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4267,4275]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4283,4294]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4313,4321]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4341,4349]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4355,4368]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[4376,4380]::east->func_177974_f
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4393,4401]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4409,4420]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4432,4440]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4460,4468]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4474,4487]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[4495,4499]::east->func_177974_f
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4511,4513]::up->func_177984_a
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4528,4536]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4544,4555]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4574,4582]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4602,4610]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4616,4629]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[4637,4642]::south->func_177968_d
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4654,4662]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4670,4681]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4693,4701]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4721,4729]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4735,4748]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[4756,4761]::south->func_177968_d
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4772,4774]::up->func_177984_a
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4789,4797]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4805,4816]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4835,4843]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4863,4871]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4877,4890]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[4898,4902]::west->func_177976_e
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[4915,4923]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[4931,4942]::getMaterial->func_149688_o
+Rename class net/minecraft/block/material/Material[4954,4962]::Material->Material
+Rename field net/minecraft/entity/Entity/worldObj[4982,4990]::worldObj->field_70170_p
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4996,5009]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[5017,5021]::west->func_177976_e
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[5033,5035]::up->func_177984_a
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[5050,5058]::getBlock->func_177230_c
+Rename method net/minecraft/block/Block/getMaterial ()Lnet/minecraft/block/material/Material;[5066,5077]::getMaterial->func_149688_o
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5162,5169]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5191,5199]::isLiquid->func_76224_d
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5220,5227]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5249,5257]::isLiquid->func_76224_d
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5287,5307]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5368,5375]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5397,5405]::isLiquid->func_76224_d
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5426,5433]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5455,5463]::isLiquid->func_76224_d
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5493,5513]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5574,5581]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5603,5611]::isLiquid->func_76224_d
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5632,5639]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5661,5669]::isLiquid->func_76224_d
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5699,5719]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5780,5787]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5809,5817]::isLiquid->func_76224_d
+Rename method net/minecraft/block/material/Material/isSolid ()Z[5838,5845]::isSolid->func_76220_a
+Rename method net/minecraft/block/material/Material/isLiquid ()Z[5867,5875]::isLiquid->func_76224_d
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[5905,5925]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[6039,6059]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[6114,6129]::playSoundEffect->func_72908_a
+Rename field net/minecraft/entity/Entity/posX[6134,6138]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[6156,6160]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[6178,6182]::posZ->field_70161_v
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[6254,6264]::setInteger->func_74768_a
+Rename method net/minecraft/entity/Entity/setPositionAndUpdate (DDD)V[6438,6458]::setPositionAndUpdate->func_70634_a
+Rename method net/minecraft/world/World/playSoundEffect (DDDLjava/lang/String;FF)V[6498,6513]::playSoundEffect->func_72908_a
+Rename field net/minecraft/entity/Entity/posX[6518,6522]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[6540,6544]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[6562,6566]::posZ->field_70161_v
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[6638,6648]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[6749,6759]::setBoolean->func_74757_a
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[6837,6851]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentTranslation[6855,6879]::ChatComponentTranslation->ChatComponentTranslation
+Rename field net/minecraft/entity/Entity/posX[6955,6959]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[6988,6992]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[7021,7025]::posZ->field_70161_v
+Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[7053,7067]::setTagCompound->func_77982_d
+Rename class net/minecraft/item/ItemStack[7108,7117]::ItemStack->ItemStack
+Rename method net/minecraft/item/Item/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[7118,7134]::onItemRightClick->func_77659_a
+Rename class net/minecraft/item/ItemStack[7131,7140]::ItemStack->ItemStack
+Rename class net/minecraft/world/World[7152,7157]::World->World
+Rename class net/minecraft/entity/player/EntityPlayer[7165,7177]::EntityPlayer->EntityPlayer
+Rename field net/minecraft/world/World/isRemote[7201,7209]::isRemote->field_72995_K
+Rename class net/minecraft/nbt/NBTTagCompound[7223,7237]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[7262,7276]::getTagCompound->func_77978_p
+Rename method net/minecraft/entity/Entity/isSneaking ()Z[7311,7321]::isSneaking->func_70093_af
+Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7375,7385]::getBoolean->func_74767_n
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[7442,7452]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getBoolean (Ljava/lang/String;)Z[7590,7600]::getBoolean->func_74767_n
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[7644,7654]::setBoolean->func_74757_a
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[7947,7961]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentTranslation[7965,7989]::ChatComponentTranslation->ChatComponentTranslation
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[8092,8106]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentTranslation[8110,8134]::ChatComponentTranslation->ChatComponentTranslation
+Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[8189,8203]::setTagCompound->func_77982_d
+Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;FFF)Z[8272,8281]::onItemUse->func_180614_a
+Rename class net/minecraft/item/ItemStack[8286,8295]::ItemStack->ItemStack
+Rename class net/minecraft/entity/player/EntityPlayer[8307,8319]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/world/World[8328,8333]::World->World
+Rename class net/minecraft/util/BlockPos[8341,8349]::BlockPos->BlockPos
+Rename class net/minecraft/util/EnumFacing[8360,8370]::EnumFacing->EnumFacing
+Rename field net/minecraft/world/World/isRemote[8434,8442]::isRemote->field_72995_K
+Rename class net/minecraft/nbt/NBTTagCompound[8456,8470]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[8495,8509]::getTagCompound->func_77978_p
+Rename method net/minecraft/entity/Entity/isSneaking ()Z[8569,8579]::isSneaking->func_70093_af
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[8672,8685]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[8696,8704]::getBlock->func_177230_c
 [method, net/minecraft/block/Block/isBed, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/entity/Entity;)Z]
 No rename for method net/minecraft/block/Block/isBed (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/entity/Entity;)Z
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8814,8824]::setInteger->func_74768_a
-Rename method net/minecraft/util/Vec3i/getX ()I[8844,8848]::getX->func_177958_n
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8879,8889]::setInteger->func_74768_a
-Rename method net/minecraft/util/Vec3i/getY ()I[8909,8913]::getY->func_177956_o
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8944,8954]::setInteger->func_74768_a
-Rename method net/minecraft/util/Vec3i/getZ ()I[8974,8978]::getZ->func_177952_p
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[9009,9019]::setInteger->func_74768_a
-Rename field net/minecraft/entity/Entity/dimension[9045,9054]::dimension->field_71093_bK
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[9079,9089]::setBoolean->func_74757_a
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[9126,9140]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentTranslation[9144,9168]::ChatComponentTranslation->ChatComponentTranslation
-Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[9224,9238]::setTagCompound->func_77982_d
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8767,8777]::setInteger->func_74768_a
+Rename method net/minecraft/util/Vec3i/getX ()I[8797,8801]::getX->func_177958_n
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8832,8842]::setInteger->func_74768_a
+Rename method net/minecraft/util/Vec3i/getY ()I[8862,8866]::getY->func_177956_o
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8897,8907]::setInteger->func_74768_a
+Rename method net/minecraft/util/Vec3i/getZ ()I[8927,8931]::getZ->func_177952_p
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[8962,8972]::setInteger->func_74768_a
+Rename field net/minecraft/entity/Entity/dimension[8998,9007]::dimension->field_71093_bK
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[9032,9042]::setBoolean->func_74757_a
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[9079,9093]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentTranslation[9097,9121]::ChatComponentTranslation->ChatComponentTranslation
+Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[9177,9191]::setTagCompound->func_77982_d
 [method, com/sythiex/hearthstonemod/ItemHearthstone/stopCasting, ()V]
 [method, net/minecraft/item/Item/showDurabilityBar, (Lnet/minecraft/item/ItemStack;)Z]
 No rename for method net/minecraft/item/Item/showDurabilityBar (Lnet/minecraft/item/ItemStack;)Z
-Rename class net/minecraft/item/ItemStack[9404,9413]::ItemStack->ItemStack
-Rename class net/minecraft/nbt/NBTTagCompound[9430,9444]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[9469,9483]::getTagCompound->func_77978_p
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9537,9547]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9581,9591]::getInteger->func_74762_e
+Rename class net/minecraft/item/ItemStack[9357,9366]::ItemStack->ItemStack
+Rename class net/minecraft/nbt/NBTTagCompound[9383,9397]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[9422,9436]::getTagCompound->func_77978_p
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9490,9500]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9534,9544]::getInteger->func_74762_e
 [method, net/minecraft/item/Item/getDurabilityForDisplay, (Lnet/minecraft/item/ItemStack;)D]
 No rename for method net/minecraft/item/Item/getDurabilityForDisplay (Lnet/minecraft/item/ItemStack;)D
-Rename class net/minecraft/item/ItemStack[9694,9703]::ItemStack->ItemStack
-Rename class net/minecraft/nbt/NBTTagCompound[9720,9734]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[9759,9773]::getTagCompound->func_77978_p
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9792,9802]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9853,9863]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9945,9955]::getInteger->func_74762_e
-Rename method net/minecraft/item/Item/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V[10024,10038]::addInformation->func_77624_a
-Rename class net/minecraft/item/ItemStack[10037,10046]::ItemStack->ItemStack
-Rename class net/minecraft/entity/player/EntityPlayer[10058,10070]::EntityPlayer->EntityPlayer
-Rename class net/minecraft/nbt/NBTTagCompound[10109,10123]::NBTTagCompound->NBTTagCompound
-Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[10148,10162]::getTagCompound->func_77978_p
+Rename class net/minecraft/item/ItemStack[9647,9656]::ItemStack->ItemStack
+Rename class net/minecraft/nbt/NBTTagCompound[9673,9687]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[9712,9726]::getTagCompound->func_77978_p
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9745,9755]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9806,9816]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[9898,9908]::getInteger->func_74762_e
+Rename method net/minecraft/item/Item/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V[9977,9991]::addInformation->func_77624_a
+Rename class net/minecraft/item/ItemStack[9990,9999]::ItemStack->ItemStack
+Rename class net/minecraft/entity/player/EntityPlayer[10011,10023]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/nbt/NBTTagCompound[10062,10076]::NBTTagCompound->NBTTagCompound
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[10101,10115]::getTagCompound->func_77978_p
 [method, java/text/NumberFormat/setMaximumFractionDigits, (I)V]
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[10302,10312]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[10255,10265]::getInteger->func_74762_e
 [method, java/util/Collection/add, (Ljava/lang/Object;)Z]
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.client.Minecraft

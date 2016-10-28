@@ -30,7 +30,7 @@ public class ItemHearthstone extends Item
 	private double prevX = 0;
 	private double prevY = 0;
 	private double prevZ = 0;
-	
+		
 	public ItemHearthstone()
 	{
 		super();
@@ -201,8 +201,7 @@ public class ItemHearthstone extends Item
 						if(!tagCompound.getBoolean("isCasting"))
 						{
 							tagCompound.setBoolean("isCasting", true);
-							// channelSound = new TargetedEntitySound(player, new
-							// ResourceLocation("hearthstonemod:hearthstoneChannel"));
+							// channelSound = new TargetedEntitySound(player, new ResourceLocation("hearthstonemod:hearthstoneChannel"));
 							// Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
 						}
 					}
