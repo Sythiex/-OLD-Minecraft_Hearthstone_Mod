@@ -32,7 +32,6 @@ INDEX VERSION 1.129+C:\Users\Sythiex\Desktop\minecraft modding\Minecraft_Hearths
 2688899330.index
 2106843836.index
 65280253.index
-1935584639.index
 2487851266.index
 3360616962.index
 1221006462.index

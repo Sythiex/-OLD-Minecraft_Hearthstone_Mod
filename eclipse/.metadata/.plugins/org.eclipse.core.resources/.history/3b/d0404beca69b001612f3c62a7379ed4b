@@ -32,7 +32,6 @@ public class ItemHearthstone extends Item
 	private boolean playSound = false;
 	private boolean isSoundPlaying = false;
 	
-	@SideOnly(Side.CLIENT)
 	private ISound channelSound;
 	
 	private double prevX = 0;
@@ -178,12 +177,6 @@ public class ItemHearthstone extends Item
 				}
 			}
 			
-			prevX = entity.posX;
-			prevY = entity.posY;
-			prevZ = entity.posZ;
-		}
-		else
-		{
 			if(!this.isSoundPlaying && this.playSound)
 			{
 				this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
@@ -195,6 +188,10 @@ public class ItemHearthstone extends Item
 				Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
 				this.isSoundPlaying = false;
 			}
+			
+			prevX = entity.posX;
+			prevY = entity.posY;
+			prevZ = entity.posZ;
 		}
 	}
 	
