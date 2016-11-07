@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.client.audio.MovingSound"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-<fullyQualifiedTypeName name="com.sythiex.hearthstonemod.ItemHearthstone"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.EventPriority"/>
@@ -33,4 +32,5 @@
 <fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="com.sythiex.hearthstonemod.ItemHearthstone"/>
 </qualifiedTypeNameHistroy>

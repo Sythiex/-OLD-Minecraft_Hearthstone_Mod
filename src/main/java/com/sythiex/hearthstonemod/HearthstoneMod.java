@@ -23,7 +23,7 @@ public class HearthstoneMod
 	public static CommonProxy proxy;
 	
 	public static final String MODID = "hearthstonemod";
-	public static final String VERSION = "0.3.1";
+	public static final String VERSION = "0.3.3";
 	
 	public static boolean difficulty;
 	

@@ -8,7 +8,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.ISound;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,15 +24,15 @@ import net.minecraft.world.WorldServer;
 
 public class ItemHearthstone extends Item
 {
-	public static int maxCooldown = 36000; // 30min
+	public static int maxCooldown = 100; //36000; // 30min
 	public static int maxCastTime = 200; // 10sec
 	
 	private boolean castFlag = false; // used to stop casting
 	private boolean playSound = false;
 	private boolean isSoundPlaying = false;
 	
-	@SideOnly(Side.CLIENT)
-	private ISound channelSound;
+	//@SideOnly(Side.CLIENT)
+	//private ISound channelSound;
 	
 	private double prevX = 0;
 	private double prevY = 0;
@@ -60,6 +59,10 @@ public class ItemHearthstone extends Item
 				{
 					cooldown--;
 					itemStack.stackTagCompound.setInteger("cooldown", cooldown);
+				}
+				else if(cooldown < 0)
+				{
+					itemStack.stackTagCompound.setInteger("cooldown", 0);
 				}
 			}
 			else
@@ -186,13 +189,13 @@ public class ItemHearthstone extends Item
 		{
 			if(!this.isSoundPlaying && this.playSound)
 			{
-				this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
-				Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
+				//this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
+				//Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
 				this.isSoundPlaying = true;
 			}
 			else if(this.isSoundPlaying && !this.playSound)
 			{
-				Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
+				//Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
 				this.isSoundPlaying = false;
 			}
 		}

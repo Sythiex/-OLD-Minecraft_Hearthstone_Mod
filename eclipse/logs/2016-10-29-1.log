@@ -1,0 +1,21 @@
+[21:10:59] [main/INFO]: Setting user: Player564
+[21:11:00] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:11:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:11:11] [Sound Library Loader/INFO]: Sound engine started
+[21:11:15] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
+[21:11:15] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
+[21:11:15] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
+[21:11:15] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:11:15] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:11:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[21:11:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:11:16] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:11:17] [Sound Library Loader/INFO]: Sound engine started
+[21:11:18] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
+[21:11:18] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
+[21:11:18] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
+[21:11:21] [Client thread/INFO]: Stopping!
+[01:11:33] [main/INFO]: Setting user: Player483
+[01:11:33] [main/INFO]: Setting user: Player337
+[01:11:36] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:11:36] [Client thread/INFO]: LWJGL Version: 2.9.1
