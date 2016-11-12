@@ -17,10 +17,13 @@ public class HearthstoneEventHandler
 		{
 			EntityPlayer player = (EntityPlayer) event.entity;
 			ItemStack currentItem = player.inventory.getCurrentItem();
-			ItemHearthstone hearthstone = (ItemHearthstone) currentItem.getItem();
-			if(hearthstone != null)
+			if(currentItem != null)
 			{
-				hearthstone.stopCasting();
+				if(currentItem.getItem() instanceof ItemHearthstone)
+				{
+					ItemHearthstone hearthstone = (ItemHearthstone) currentItem.getItem();
+					hearthstone.stopCasting();
+				}
 			}
 		}
 	}

@@ -1,44 +1,47 @@
-[13:13:24] [Client thread/INFO]: Setting user: Player871
-[13:13:27] [Client thread/INFO]: LWJGL Version: 2.9.4
-[13:13:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[13:13:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:13:33] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[13:13:33] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:13:34] [Thread-9/INFO]: OpenAL initialized.
-[13:13:34] [Sound Library Loader/INFO]: Sound engine started
-[13:13:42] [Client thread/INFO]: Created: 16x16 textures-atlas
-[13:13:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[13:13:43] [Client thread/INFO]: SoundSystem shutting down...
-[13:13:43] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[13:13:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:13:44] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[13:13:44] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:13:44] [Thread-11/INFO]: OpenAL initialized.
-[13:13:44] [Sound Library Loader/INFO]: Sound engine started
-[13:13:51] [Client thread/INFO]: Created: 512x512 textures-atlas
-[13:13:52] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[13:13:55] [Client thread/INFO]: Deleting level New World
-[13:13:55] [Client thread/INFO]: Attempt 1...
-[13:13:57] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[13:13:58] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[13:13:58] [Server thread/INFO]: Generating keypair
-[13:13:58] [Server thread/INFO]: Converting map!
-[13:13:58] [Server thread/INFO]: Scanning folders...
-[13:13:58] [Server thread/INFO]: Total conversion count is 0
-[13:14:00] [Server thread/INFO]: Preparing start region for level 0
-[13:14:01] [Server thread/INFO]: Preparing spawn area: 10%
-[13:14:02] [Server thread/INFO]: Preparing spawn area: 19%
-[13:14:03] [Server thread/INFO]: Preparing spawn area: 30%
-[13:14:04] [Server thread/INFO]: Preparing spawn area: 42%
-[13:14:05] [Server thread/INFO]: Preparing spawn area: 55%
-[13:14:06] [Server thread/INFO]: Preparing spawn area: 67%
-[13:14:07] [Server thread/INFO]: Preparing spawn area: 78%
-[13:14:08] [Server thread/INFO]: Preparing spawn area: 90%
-[13:14:09] [Server thread/INFO]: Changing view distance to 12, from 10
-[13:14:09] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[13:14:10] [Server thread/INFO]: Player871[local:E:b870921a] logged in with entity id 180 at (-380.5, 64.0, 190.5)
-[13:14:10] [Server thread/INFO]: Player871 joined the game
-[13:14:11] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@67f06fe2[id=68a3e4ad-dd19-33fa-8035-4934872a4f77,name=Player871,properties={},legacy=false]
+[15:05:08] [Client thread/INFO]: Setting user: Player5
+[15:05:12] [Client thread/INFO]: LWJGL Version: 2.9.4
+[15:05:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[15:05:18] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[15:05:18] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[15:05:18] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:05:18] [Thread-9/INFO]: OpenAL initialized.
+[15:05:18] [Sound Library Loader/INFO]: Sound engine started
+[15:05:28] [Client thread/INFO]: Created: 16x16 textures-atlas
+[15:05:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
+[15:05:29] [Client thread/INFO]: SoundSystem shutting down...
+[15:05:29] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[15:05:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[15:05:30] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[15:05:30] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:05:30] [Thread-11/INFO]: OpenAL initialized.
+[15:05:30] [Sound Library Loader/INFO]: Sound engine started
+[15:05:38] [Client thread/INFO]: Created: 512x512 textures-atlas
+[15:05:39] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:06:27] [Client thread/INFO]: Deleting level New World
+[15:06:27] [Client thread/INFO]: Attempt 1...
+[15:06:30] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[15:06:30] [Server thread/INFO]: Generating keypair
+[15:06:30] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:06:30] [Server thread/INFO]: Converting map!
+[15:06:30] [Server thread/INFO]: Scanning folders...
+[15:06:30] [Server thread/INFO]: Total conversion count is 0
+[15:06:31] [Server thread/INFO]: Preparing start region for level 0
+[15:06:32] [Server thread/INFO]: Preparing spawn area: 5%
+[15:06:33] [Server thread/INFO]: Preparing spawn area: 11%
+[15:06:34] [Server thread/INFO]: Preparing spawn area: 19%
+[15:06:35] [Server thread/INFO]: Preparing spawn area: 29%
+[15:06:36] [Server thread/INFO]: Preparing spawn area: 39%
+[15:06:37] [Server thread/INFO]: Preparing spawn area: 49%
+[15:06:38] [Server thread/INFO]: Preparing spawn area: 58%
+[15:06:39] [Server thread/INFO]: Preparing spawn area: 68%
+[15:06:40] [Server thread/INFO]: Preparing spawn area: 78%
+[15:06:41] [Server thread/INFO]: Preparing spawn area: 87%
+[15:06:42] [Server thread/INFO]: Preparing spawn area: 98%
+[15:06:43] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:06:43] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:06:43] [Server thread/INFO]: Player5[local:E:5da3ea2c] logged in with entity id 186 at (147.5, 64.0, 247.5)
+[15:06:43] [Server thread/INFO]: Player5 joined the game
+[15:06:45] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6704a53d[id=abd58e08-2462-379a-81f3-fa94df810a52,name=Player5,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
@@ -60,21 +63,29 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_112]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_112]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_112]
-[13:14:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2178ms behind, skipping 43 tick(s)
-[13:14:14] [Server thread/INFO]: Player871 has just earned the achievement [Taking Inventory]
-[13:14:14] [Client thread/INFO]: [CHAT] Player871 has just earned the achievement [Taking Inventory]
-[13:14:23] [Client thread/INFO]: [CHAT] Hearthstone is now linked
-[13:14:48] [Server thread/INFO]: Saving and pausing game...
-[13:14:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:14:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:14:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:14:49] [Server thread/INFO]: Stopping server
-[13:14:49] [Server thread/INFO]: Saving players
-[13:14:49] [Server thread/INFO]: Saving worlds
-[13:14:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:14:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:14:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:14:51] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[13:14:51] [Client thread/INFO]: Stopping!
-[13:14:51] [Client thread/INFO]: SoundSystem shutting down...
-[13:14:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[15:06:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4457ms behind, skipping 89 tick(s)
+[15:06:48] [Server thread/INFO]: Player5 has just earned the achievement [Taking Inventory]
+[15:06:48] [Client thread/INFO]: [CHAT] Player5 has just earned the achievement [Taking Inventory]
+[15:06:54] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[15:07:01] [Client thread/INFO]: [CHAT] Hearthstone is now linked
+[15:07:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3267ms behind, skipping 65 tick(s)
+[15:07:03] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[15:07:06] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[15:07:06] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[15:07:12] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
+[15:07:15] [Chunk Batcher 1/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[15:07:19] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[15:07:32] [Server thread/INFO]: Saving and pausing game...
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:07:32] [Server thread/INFO]: Stopping server
+[15:07:32] [Server thread/INFO]: Saving players
+[15:07:32] [Server thread/INFO]: Saving worlds
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:07:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:07:34] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:07:35] [Client thread/INFO]: Stopping!
+[15:07:35] [Client thread/INFO]: SoundSystem shutting down...
+[15:07:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

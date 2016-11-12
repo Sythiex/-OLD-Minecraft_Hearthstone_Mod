@@ -3,7 +3,7 @@
   "modid": "hearthstonemod",
   "name": "Hearthstone Mod",
   "description": "Adds an item that allows the player to teleport to their bed.",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "mcversion": "1.8.9",
   "url": "http://minecraft.curseforge.com/projects/hearthstone-mod",
   "updateUrl": "",

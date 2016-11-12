@@ -97,10 +97,12 @@ Class Start: com.sythiex.hearthstonemod.HearthstoneEventHandler
       @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|661|670|ItemStack|class|net.minecraft.item.ItemStack
       @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|692|701|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
       @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|702|716|getCurrentItem|method|net.minecraft.entity.player.InventoryPlayer|getCurrentItem|()Lnet/minecraft/item/ItemStack;
-      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|723|738|ItemHearthstone|class|com.sythiex.hearthstonemod.ItemHearthstone
-      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|754|769|ItemHearthstone|class|com.sythiex.hearthstonemod.ItemHearthstone
-      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|783|790|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|842|853|stopCasting|method|com.sythiex.hearthstonemod.ItemHearthstone|stopCasting|()V
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|771|778|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|792|807|ItemHearthstone|class|com.sythiex.hearthstonemod.ItemHearthstone
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|820|835|ItemHearthstone|class|com.sythiex.hearthstonemod.ItemHearthstone
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|851|866|ItemHearthstone|class|com.sythiex.hearthstonemod.ItemHearthstone
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|880|887|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com\sythiex\hearthstonemod\HearthstoneEventHandler.java|908|919|stopCasting|method|com.sythiex.hearthstonemod.ItemHearthstone|stopCasting|()V
    Method End: onEvent(Lnet/minecraftforge/event/entity/living/LivingHurtEvent;)V
 Class End  : com.sythiex.hearthstonemod.HearthstoneEventHandler
 endProcessing com\sythiex\hearthstonemod\HearthstoneEventHandler.java

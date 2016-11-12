@@ -33451,7 +33451,8 @@ No rename for field net/minecraftforge/event/entity/EntityEvent/entity
 Rename class net/minecraft/item/ItemStack[661,670]::ItemStack->ItemStack
 Rename field net/minecraft/entity/player/EntityPlayer/inventory[692,701]::inventory->field_71071_by
 Rename method net/minecraft/entity/player/InventoryPlayer/getCurrentItem ()Lnet/minecraft/item/ItemStack;[707,721]::getCurrentItem->func_70448_g
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[786,793]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[774,781]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[888,895]::getItem->func_77973_b
 [method, com/sythiex/hearthstonemod/ItemHearthstone/stopCasting, ()V]
 Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.item.Item
