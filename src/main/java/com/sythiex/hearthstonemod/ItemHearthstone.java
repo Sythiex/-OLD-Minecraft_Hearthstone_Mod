@@ -24,15 +24,14 @@ import net.minecraft.world.WorldServer;
 
 public class ItemHearthstone extends Item
 {
-	public static int maxCooldown = 100; //36000; // 30min
+	public static int maxCooldown = 36000; // 30min
 	public static int maxCastTime = 200; // 10sec
 	
-	private boolean castFlag = false; // used to stop casting
 	private boolean playSound = false;
 	private boolean isSoundPlaying = false;
 	
-	//@SideOnly(Side.CLIENT)
-	//private ISound channelSound;
+	// @SideOnly(Side.CLIENT)
+	// private ISound channelSound;
 	
 	private double prevX = 0;
 	private double prevY = 0;
@@ -52,6 +51,7 @@ public class ItemHearthstone extends Item
 	{
 		if(!world.isRemote)
 		{
+			// if item has a tag, decrement cooldown
 			if(itemStack.stackTagCompound != null)
 			{
 				int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
@@ -65,6 +65,7 @@ public class ItemHearthstone extends Item
 					itemStack.stackTagCompound.setInteger("cooldown", 0);
 				}
 			}
+			// if no tag, add a tag
 			else
 			{
 				itemStack.stackTagCompound = new NBTTagCompound();
@@ -76,35 +77,26 @@ public class ItemHearthstone extends Item
 				itemStack.stackTagCompound.setInteger("bedDimension", 0);
 				itemStack.stackTagCompound.setBoolean("locationSet", false);
 				itemStack.stackTagCompound.setBoolean("isCasting", false);
-				// itemStack.stackTagCompound.setInteger("distance", 0);
 			}
 			
+			// if player is casting
 			if(itemStack.stackTagCompound.getBoolean("isCasting") && entity instanceof EntityPlayer)
 			{
+				// increment cast time
 				EntityPlayer player = (EntityPlayer) entity;
 				int castTime = itemStack.stackTagCompound.getInteger("castTime") + 1;
 				itemStack.stackTagCompound.setInteger("castTime", castTime);
 				
-				if(player.ticksExisted % 5 == 0)
-				{
-					HearthstoneMod.proxy.generateChannelParticles(player);
-				}
-				
 				double diffX = Math.abs(prevX - player.posX);
 				double diffY = Math.abs(prevY - player.posY);
 				double diffZ = Math.abs(prevZ - player.posZ);
-				// if player moves cancel cast
-				if(((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0) || castFlag)
+				// if player moves, cancel cast
+				if((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0)
 				{
 					this.playSound = false;
 					itemStack.stackTagCompound.setInteger("castTime", 0);
 					itemStack.stackTagCompound.setBoolean("isCasting", false);
 					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneCastCanceled.txt"));
-					
-					if(castFlag)
-					{
-						castFlag = false;
-					}
 				}
 				
 				// initiate tp after casting
@@ -187,15 +179,28 @@ public class ItemHearthstone extends Item
 		}
 		else
 		{
+			// if player is casting, generate particles
+			if(itemStack.stackTagCompound != null)
+			{
+				if(itemStack.stackTagCompound.getBoolean("isCasting") && entity instanceof EntityPlayer)
+				{
+					EntityPlayer player = (EntityPlayer) entity;
+					if(player.ticksExisted % 5 == 0)
+					{
+						HearthstoneMod.proxy.generateChannelParticles(player);
+					}
+				}
+			}
+			
 			if(!this.isSoundPlaying && this.playSound)
 			{
-				//this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
-				//Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
+				// this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
+				// Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
 				this.isSoundPlaying = true;
 			}
 			else if(this.isSoundPlaying && !this.playSound)
 			{
-				//Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
+				// Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
 				this.isSoundPlaying = false;
 			}
 		}
@@ -240,8 +245,7 @@ public class ItemHearthstone extends Item
 	}
 	
 	@Override
-	public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int metadata, float sideX,
-			float sideY, float sideZ)
+	public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int metadata, float sideX, float sideY, float sideZ)
 	{
 		if(!world.isRemote)
 		{
@@ -263,11 +267,6 @@ public class ItemHearthstone extends Item
 		}
 		else
 			return false;
-	}
-	
-	public void stopCasting()
-	{
-		this.castFlag = true;
 	}
 	
 	public boolean showDurabilityBar(ItemStack itemStack)

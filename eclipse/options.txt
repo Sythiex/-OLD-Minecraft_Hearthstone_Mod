@@ -85,7 +85,11 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-soundCategory_master:1.0
+key_Baubles Inventory:48
+key_Change Wand Focus:33
+key_Activate Hover Harness:35
+key_Misc Wand Toggle:34
+soundCategory_master:0.25496688
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

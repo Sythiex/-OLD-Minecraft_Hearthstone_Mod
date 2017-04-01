@@ -1,50 +1,11 @@
-[01:15:56] [main/INFO]: Setting user: Player582
-[01:15:57] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:16:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[01:16:08] [Sound Library Loader/INFO]: Sound engine started
-[01:16:09] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
-[01:16:09] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
-[01:16:09] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
-[01:16:09] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[01:16:09] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[01:16:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod
-[01:16:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:16:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[01:16:11] [Sound Library Loader/INFO]: Sound engine started
-[01:16:12] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneChannel.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneChannel
-[01:16:12] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneCast.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneCast
-[01:16:12] [Client thread/WARN]: File hearthstonemod:sounds/hearthstoneImpact.ogg does not exist, cannot add it to event hearthstonemod:hearthstoneImpact
-[01:19:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[01:19:17] [Server thread/INFO]: Generating keypair
-[01:19:18] [Server thread/INFO]: Preparing start region for level 0
-[01:19:19] [Server thread/INFO]: Changing view distance to 12, from 10
-[01:19:20] [Server thread/INFO]: Player582[local:E:5426a770] logged in with entity id 289 at (-38.75158014196286, 69.0, 253.28492940905446)
-[01:19:20] [Server thread/INFO]: Player582 joined the game
-[01:19:32] [Client thread/WARN]: Unable to play empty soundEvent: hearthstonemod:hearthstoneCast
-[01:19:32] [Client thread/WARN]: Unable to play empty soundEvent: hearthstonemod:hearthstoneImpact
-[01:19:40] [Server thread/INFO]: Player582 has just earned the achievement [Taking Inventory]
-[01:19:40] [Client thread/INFO]: [CHAT] Player582 has just earned the achievement [Taking Inventory]
-[01:20:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8098ms behind, skipping 161 tick(s)
-[01:20:20] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[01:20:27] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[01:20:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8000ms behind, skipping 160 tick(s)
-[01:20:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2278ms behind, skipping 45 tick(s)
-[01:20:51] [Client thread/WARN]: Unable to play empty soundEvent: hearthstonemod:hearthstoneCast
-[01:20:59] [Client thread/INFO]: Warning: Clientside chunk ticking took 149 ms
-[01:21:03] [Client thread/INFO]: Warning: Clientside chunk ticking took 161 ms
-[01:21:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2265ms behind, skipping 45 tick(s)
-[01:21:06] [Client thread/INFO]: [CHAT] Hearthstone channel canceled!
-[01:21:21] [Client thread/WARN]: Unable to play empty soundEvent: hearthstonemod:hearthstoneCast
-[01:21:27] [Server thread/INFO]: Saving and pausing game...
-[01:21:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:21:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:21:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:21:30] [Client thread/INFO]: Stopping!
-[01:21:30] [Server thread/INFO]: Stopping server
-[01:21:30] [Server thread/INFO]: Saving players
-[01:21:30] [Server thread/INFO]: Saving worlds
-[01:21:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:21:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:21:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:21:30] [Client Shutdown Thread/INFO]: Stopping server
-[01:21:30] [Client Shutdown Thread/INFO]: Saving players
+[18:40:43] [main/INFO]: Setting user: Player161
+[18:40:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:40:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[18:41:02] [Sound Library Loader/INFO]: Sound engine started
+[18:41:04] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:41:04] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:41:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hearthstone Mod, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[18:41:06] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[18:41:06] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[18:41:07] [Sound Library Loader/INFO]: Sound engine started
+[18:41:13] [Client thread/INFO]: Stopping!

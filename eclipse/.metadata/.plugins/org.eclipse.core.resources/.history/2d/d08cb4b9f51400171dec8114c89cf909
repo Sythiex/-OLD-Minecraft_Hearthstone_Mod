@@ -1,0 +1,11 @@
+package com.sythiex.hearthstonemod.proxy;
+
+import net.minecraft.entity.Entity;
+
+public class CommonProxy
+{
+	public void generateChannelParticles(EntityPlayer player)
+	{
+	
+	}
+}

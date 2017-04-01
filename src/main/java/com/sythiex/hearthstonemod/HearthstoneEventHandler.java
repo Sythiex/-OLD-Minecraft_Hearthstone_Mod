@@ -21,8 +21,7 @@ public class HearthstoneEventHandler
 			{
 				if(currentItem.getItem() instanceof ItemHearthstone)
 				{
-					ItemHearthstone hearthstone = (ItemHearthstone) currentItem.getItem();
-					hearthstone.stopCasting();
+					currentItem.stackTagCompound.setBoolean("isCasting", false);
 				}
 			}
 		}

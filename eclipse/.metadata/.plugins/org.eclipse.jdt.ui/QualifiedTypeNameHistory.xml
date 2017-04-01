@@ -20,12 +20,10 @@
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.proxy.ClientProxy"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.proxy.ServerProxy"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.proxy.CommonProxy"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="net.minecraft.client.particle.EntityFX"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.EntityParticleChannelLeaf"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="net.minecraft.client.particle.EntityAuraFX"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.audio.PositionedSound"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.HearthstoneMod"/>
 <fullyQualifiedTypeName name="net.minecraft.client.audio.ISound"/>
@@ -33,4 +31,12 @@
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
 <fullyQualifiedTypeName name="com.sythiex.hearthstonemod.ItemHearthstone"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Loader"/>
+<fullyQualifiedTypeName name="thaumcraft.api.ThaumcraftApi"/>
+<fullyQualifiedTypeName name="thaumcraft.api.aspects.AspectList"/>
+<fullyQualifiedTypeName name="thaumcraft.api.aspects.Aspect"/>
 </qualifiedTypeNameHistroy>
