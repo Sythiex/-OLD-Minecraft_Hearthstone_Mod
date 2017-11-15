@@ -30,8 +30,8 @@ public class ItemHearthstone extends Item
 {
 	public static String name = "hearthstone";
 	
-	public static final int maxCooldown = 36000; // 30min
-	public static final int maxCastTime = 200; // 10sec
+	public static final int maxCooldown = HearthstoneMod.hearthstoneCooldown; // 30min default
+	public static final int maxCastTime = HearthstoneMod.hearthstoneChannelTime; // 10sec default
 	
 	public ItemHearthstone()
 	{
@@ -226,10 +226,11 @@ public class ItemHearthstone extends Item
 	}
 	
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand)
+	public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand)
 	{
-		if(!world.isRemote)
+		if(!player.worldObj.isRemote)
 		{
+			ItemStack itemStack = player.getHeldItem(hand);
 			NBTTagCompound tagCompound = itemStack.getTagCompound();
 			
 			// if not sneaking
@@ -264,14 +265,15 @@ public class ItemHearthstone extends Item
 			// save tag
 			itemStack.setTagCompound(tagCompound);
 		}
-		return new ActionResult(EnumActionResult.PASS, itemStack);
+		return new ActionResult(EnumActionResult.PASS, player.getHeldItem(hand));
 	}
 	
 	@Override
-	public EnumActionResult onItemUse(ItemStack itemStack, EntityPlayer player, World world, BlockPos blockPos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
+	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos blockPos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
 		if(!world.isRemote)
 		{
+			ItemStack itemStack = player.getHeldItem(hand);
 			NBTTagCompound tagCompound = itemStack.getTagCompound();
 			
 			// if sneaking

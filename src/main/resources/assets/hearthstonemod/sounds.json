@@ -1,14 +1,14 @@
 {
     "hearthstoneChannel": {
         "category": "player",
-        "sounds": [ "hearthstonemod:hearthstoneChannel" ]
+        "sounds": [ "hearthstonemod:hearthstonechannel" ]
     },
     "hearthstoneCast": {
         "category": "player",
-        "sounds": [ "hearthstonemod:hearthstoneCast" ]
+        "sounds": [ "hearthstonemod:hearthstonecast" ]
     },
     "hearthstoneImpact": {
         "category": "player",
-        "sounds": [ "hearthstonemod:hearthstoneImpact" ]
+        "sounds": [ "hearthstonemod:hearthstoneimpact" ]
     }
 }

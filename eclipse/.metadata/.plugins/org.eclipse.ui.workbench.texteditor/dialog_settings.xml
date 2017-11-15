@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Sound" key="selection"/>
+		<item value="right" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="right"/>
 			<item value="sound"/>
 			<item value="ISound"/>
 			<item value="isound"/>
@@ -18,7 +19,6 @@
 			<item value="chatcomp"/>
 			<item value="chat"/>
 			<item value="effect"/>
-			<item value="right"/>
 			<item value="getInteger(&quot;prev"/>
 			<item value="prevX"/>
 			<item value="blockMaterial"/>

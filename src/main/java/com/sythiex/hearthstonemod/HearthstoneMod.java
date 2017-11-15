@@ -26,7 +26,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-@Mod(modid = HearthstoneMod.MODID, name = HearthstoneMod.NAME, version = HearthstoneMod.VERSION, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(modid = HearthstoneMod.MODID, name = HearthstoneMod.NAME, version = HearthstoneMod.VERSION, acceptedMinecraftVersions = "[1.11.2]")
 public class HearthstoneMod
 {
 	@SidedProxy(clientSide = "com.sythiex.hearthstonemod.proxy.ClientProxy", serverSide = "com.sythiex.hearthstonemod.proxy.CommonProxy")
@@ -34,7 +34,7 @@ public class HearthstoneMod
 	
 	public static final String MODID = "hearthstonemod";
 	public static final String NAME = "Hearthstone Mod";
-	public static final String VERSION = "0.4.1";
+	public static final String VERSION = "0.4.2";
 	
 	@Instance(MODID)
 	public static HearthstoneMod instance;
@@ -42,6 +42,8 @@ public class HearthstoneMod
 	public static Logger logger;
 	
 	public static int recipeDifficulty;
+	public static int hearthstoneChannelTime;
+	public static int hearthstoneCooldown;
 	
 	public static Item hearthstone;
 	
@@ -59,6 +61,8 @@ public class HearthstoneMod
 		config.load();
 		
 		recipeDifficulty = config.getInt("Recipe Difficulty", config.CATEGORY_GENERAL, 1, 0, 2, "0 = lapis; 1 = diamonds (default); 2 = ender pearls");
+		hearthstoneChannelTime = config.getInt("Channel Time", config.CATEGORY_GENERAL, 200, 0, 1200, "How long you must wait for the hearthstone to teleport you. Measured in ticks (20 ticks = 1 second). Default 10 seconds");
+		hearthstoneCooldown = config.getInt("Cooldown", config.CATEGORY_GENERAL, 36000, 0, 1728000, "How long you must wait between hearthstone uses. Measured in ticks (20 ticks = 1 second). Default 30 minutes");
 		
 		config.save();
 		
@@ -67,13 +71,13 @@ public class HearthstoneMod
 		hearthstone = new ItemHearthstone();
 		GameRegistry.register(hearthstone);
 		
-		channelSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstoneChannel")).setRegistryName("hearthstoneChannel");
+		channelSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstonechannel")).setRegistryName("hearthstoneChannel");
 		GameRegistry.register(channelSoundEvent);
 		
-		castSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstoneCast")).setRegistryName("hearthstoneCast");
+		castSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstonecast")).setRegistryName("hearthstoneCast");
 		GameRegistry.register(castSoundEvent);
 		
-		impactSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstoneImpact")).setRegistryName("hearthstoneImpact");
+		impactSoundEvent = new SoundEvent(new ResourceLocation("hearthstonemod", "hearthstoneimpact")).setRegistryName("hearthstoneImpact");
 		GameRegistry.register(impactSoundEvent);
 		
 		proxy.preInit(event);
