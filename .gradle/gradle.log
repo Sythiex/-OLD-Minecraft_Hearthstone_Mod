@@ -19,7 +19,7 @@ Note: C:\Users\Sythiex\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
 :sourceTestJava UP-TO-DATE
@@ -44,4 +44,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 12.149 secs
+Total time: 10.825 secs
