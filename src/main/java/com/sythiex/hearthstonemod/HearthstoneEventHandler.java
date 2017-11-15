@@ -1,11 +1,11 @@
 package com.sythiex.hearthstonemod;
 
-import cpw.mods.fml.common.eventhandler.EventPriority;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class HearthstoneEventHandler
 {
@@ -13,15 +13,17 @@ public class HearthstoneEventHandler
 	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = false)
 	public void onEvent(LivingHurtEvent event)
 	{
-		if(event.entity instanceof EntityPlayer)
+		if(event.getEntity() instanceof EntityPlayer)
 		{
-			EntityPlayer player = (EntityPlayer) event.entity;
+			EntityPlayer player = (EntityPlayer) event.getEntity();
 			ItemStack currentItem = player.inventory.getCurrentItem();
 			if(currentItem != null)
 			{
 				if(currentItem.getItem() instanceof ItemHearthstone)
 				{
-					currentItem.stackTagCompound.setBoolean("isCasting", false);
+					NBTTagCompound tagCompound = currentItem.getTagCompound();
+					tagCompound.setBoolean("stopCasting", true);
+					currentItem.setTagCompound(tagCompound);
 				}
 			}
 		}

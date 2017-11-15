@@ -2,30 +2,38 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="isCasting" key="selection"/>
+		<item value="Sound" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="isCasting"/>
-			<item value="hearthstoneCastCanceled"/>
-			<item value="channelSound"/>
-			<item value="isound"/>
-			<item value="castFlag"/>
 			<item value="sound"/>
-			<item value="playChannelSound"/>
-			<item value="channelSoundPlaying"/>
+			<item value="ISound"/>
+			<item value="isound"/>
+			<item value="castTime"/>
+			<item value="compass"/>
+			<item value="ender"/>
+			<item value="SoundCategory.MASTER"/>
+			<item value="chatcomp"/>
+			<item value="chat"/>
+			<item value="effect"/>
+			<item value="right"/>
+			<item value="getInteger(&quot;prev"/>
+			<item value="prevX"/>
+			<item value="blockMaterial"/>
 		</list>
 		<list key="replacehistory">
-			<item value="player"/>
+			<item value="SoundCategory.PLAYERS"/>
+			<item value="SoundCategory.MASTER"/>
+			<item value="getDouble(&quot;prev"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="1341" key="DIALOG_X_ORIGIN"/>
-		<item value="521" key="DIALOG_Y_ORIGIN"/>
+		<item value="1429" key="DIALOG_X_ORIGIN"/>
+		<item value="191" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

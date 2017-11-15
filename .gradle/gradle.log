@@ -1,41 +1,47 @@
-****************************
- Powered By MCP:             
- http://modcoderpack.com/    
- Searge, ProfMobius, Fesh0r, 
- R4wk, ZeuX, IngisKahn, bspkrs
- MCP Data version : unknown
-****************************
-:compileApiJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
-
+#################################################
+         ForgeGradle 2.2-SNAPSHOT-d13a6c8        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+               Powered by MCP unknown               
+             http://modcoderpack.com             
+         by: Searge, ProfMobius, Fesh0r,         
+         R4wk, ZeuX, IngisKahn, bspkrs           
+#################################################
+:deobfCompileDummyTask
+:deobfProvidedDummyTask
+:sourceApiJava UP-TO-DATE
+:compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
-:apiClasses
+:apiClasses UP-TO-DATE
 :sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: C:\Users\Sythiex\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build\sources\java\com\sythiex\hearthstonemod\ItemHearthstone.java uses unchecked or unsafe operations.
+Note: C:\Users\Sythiex\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build\sources\main\java\com\sythiex\hearthstonemod\ItemHearthstone.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData UP-TO-DATE
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
 :getVersionJson
-:extractUserDev UP-TO-DATE
+:extractUserdev UP-TO-DATE
 :genSrgs SKIPPED
-:reobf
+:reobfJar
+:extractRangemapReplacedMain
+C:\Users\Sythiex\Desktop\minecraft modding\Minecraft_Hearthstone_Mod\build\sources\main\java
+:retromapReplacedMain
+remapping source...
+:sourceJar
 :assemble
 :check UP-TO-DATE
 :build
 
 BUILD SUCCESSFUL
 
-Total time: 42.63 secs
+Total time: 10.825 secs

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;playCastSound&apos; in &apos;com.sythiex.hearthstonemod.ItemHearthstone&apos; to &apos;playSound&apos;&#x0D;&#x0A;- Original project: &apos;Minecraft&apos;&#x0D;&#x0A;- Original element: &apos;com.sythiex.hearthstonemod.ItemHearthstone.playCastSound&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sythiex.hearthstonemod.ItemHearthstone.playSound&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;playCastSound&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java&lt;com.sythiex.hearthstonemod{ItemHearthstone.java[ItemHearthstone^playCastSound" name="playSound" references="true" setter="false" stamp="1477432631704" textual="false" version="1.0"/>
-</session>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="87" key="DIALOG_X_ORIGIN"/>
-		<item value="22" key="DIALOG_Y_ORIGIN"/>
+		<item value="43" key="DIALOG_X_ORIGIN"/>
+		<item value="-92" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="760" key="dialogHeight"/>
-		<item value="1440" key="dialogWidth"/>
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -17,10 +17,9 @@
 		</list>
 	</section>
 	<section name="PreferencesImportWizard">
-		<item value="C:\Users\Aaron\Desktop\minecraft modding\black&amp;blue.epf" key=""/>
+		<item value="C:\Users\Sythiex\Desktop\minecraft modding\black&amp;blue.epf" key=""/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
-			<item value="C:\Users\Aaron\Desktop\minecraft modding\black&amp;blue.epf"/>
-			<item value="C:\Users\Sythiex\Desktop\minecraft modding\Black&amp;Blue.epf"/>
+			<item value="C:\Users\Sythiex\Desktop\minecraft modding\black&amp;blue.epf"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

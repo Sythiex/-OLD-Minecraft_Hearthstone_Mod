@@ -3,297 +3,331 @@ package com.sythiex.hearthstonemod;
 import java.text.DecimalFormat;
 import java.util.List;
 
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ChatComponentTranslation;
-import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemHearthstone extends Item
 {
-	public static int maxCooldown = 36000; // 30min
-	public static int maxCastTime = 200; // 10sec
+	public static String name = "hearthstone";
 	
-	private boolean playSound = false;
-	private boolean isSoundPlaying = false;
-	
-	// @SideOnly(Side.CLIENT)
-	// private ISound channelSound;
-	
-	private double prevX = 0;
-	private double prevY = 0;
-	private double prevZ = 0;
+	public static final int maxCooldown = 36000; // 30min
+	public static final int maxCastTime = 200; // 10sec
 	
 	public ItemHearthstone()
 	{
 		super();
-		setUnlocalizedName("hearthstone");
+		setUnlocalizedName(name);
+		setRegistryName(name);
 		setMaxStackSize(1);
-		setCreativeTab(CreativeTabs.tabTools);
-		setTextureName(HearthstoneMod.MODID + ":hearthstone");
+		setCreativeTab(CreativeTabs.TOOLS);
 	}
 	
 	@Override
 	public void onUpdate(ItemStack itemStack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
 	{
+		// server side
 		if(!world.isRemote)
 		{
-			// if item has a tag, decrement cooldown
-			if(itemStack.stackTagCompound != null)
+			NBTTagCompound tag = itemStack.getTagCompound();
+			
+			// if item has tag, decrement cooldown
+			if(tag != null)
 			{
-				int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
+				int cooldown = tag.getInteger("cooldown");
 				if(cooldown > 0)
 				{
 					cooldown--;
-					itemStack.stackTagCompound.setInteger("cooldown", cooldown);
-				}
-				else if(cooldown < 0)
-				{
-					itemStack.stackTagCompound.setInteger("cooldown", 0);
+					tag.setInteger("cooldown", cooldown);
 				}
 			}
 			// if no tag, add a tag
 			else
 			{
-				itemStack.stackTagCompound = new NBTTagCompound();
-				itemStack.stackTagCompound.setInteger("cooldown", 0);
-				itemStack.stackTagCompound.setInteger("castTime", 0);
-				itemStack.stackTagCompound.setInteger("bedX", 0);
-				itemStack.stackTagCompound.setInteger("bedY", 0);
-				itemStack.stackTagCompound.setInteger("bedZ", 0);
-				itemStack.stackTagCompound.setInteger("bedDimension", 0);
-				itemStack.stackTagCompound.setBoolean("locationSet", false);
-				itemStack.stackTagCompound.setBoolean("isCasting", false);
+				tag = new NBTTagCompound();
+				tag.setInteger("cooldown", 0);
+				tag.setInteger("castTime", 0);
+				tag.setInteger("bedX", 0);
+				tag.setInteger("bedY", 0);
+				tag.setInteger("bedZ", 0);
+				tag.setInteger("bedDimension", 0);
+				tag.setDouble("prevX", -1);
+				tag.setDouble("prevY", -1);
+				tag.setDouble("prevZ", -1);
+				tag.setBoolean("locationSet", false);
+				tag.setBoolean("isCasting", false);
+				tag.setBoolean("stopCasting", false);
 			}
 			
 			// if player is casting
-			if(itemStack.stackTagCompound.getBoolean("isCasting") && entity instanceof EntityPlayer)
+			if(tag.getBoolean("isCasting") && entity instanceof EntityPlayer)
 			{
-				// increment cast time
 				EntityPlayer player = (EntityPlayer) entity;
-				int castTime = itemStack.stackTagCompound.getInteger("castTime") + 1;
-				itemStack.stackTagCompound.setInteger("castTime", castTime);
 				
-				double diffX = Math.abs(prevX - player.posX);
-				double diffY = Math.abs(prevY - player.posY);
-				double diffZ = Math.abs(prevZ - player.posZ);
-				// if player moves, cancel cast
-				if((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && prevX != 0)
+				// check if player is holding hearthstone
+				ItemStack heldItem = player.getHeldItemMainhand();
+				if(heldItem != null)
 				{
-					this.playSound = false;
-					itemStack.stackTagCompound.setInteger("castTime", 0);
-					itemStack.stackTagCompound.setBoolean("isCasting", false);
-					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneCastCanceled.txt"));
+					if(heldItem != itemStack)
+					{
+						tag.setBoolean("stopCasting", true);
+					}
+				}
+				else
+					tag.setBoolean("stopCasting", true);
+				
+				// detect player movement
+				double diffX = Math.abs(tag.getDouble("prevX") - player.posX);
+				double diffY = Math.abs(tag.getDouble("prevY") - player.posY);
+				double diffZ = Math.abs(tag.getDouble("prevZ") - player.posZ);
+				// if player moves or swaps items cancel cast
+				if(((diffX > 0.05 || diffY > 0.05 || diffZ > 0.05) && tag.getDouble("prevY") != -1) || tag.getBoolean("stopCasting"))
+				{
+					tag.setInteger("castTime", 0);
+					tag.setBoolean("isCasting", false);
+					tag.setBoolean("stopCasting", false);
+					player.addChatMessage(new TextComponentTranslation("msg.hearthstoneCastCanceled.txt"));
+				}
+				else
+				{
+					// increment cast time
+					tag.setInteger("castTime", tag.getInteger("castTime") + 1);
 				}
 				
 				// initiate tp after casting
-				if(itemStack.stackTagCompound.getInteger("castTime") >= maxCastTime)
+				if(tag.getInteger("castTime") >= maxCastTime)
 				{
-					this.playSound = false;
-					itemStack.stackTagCompound.setInteger("castTime", 0);
-					itemStack.stackTagCompound.setBoolean("isCasting", false);
+					// stop and reset cast time
+					tag.setInteger("castTime", 0);
+					tag.setBoolean("isCasting", false);
 					
-					world.playSoundEffect(prevX, prevY, prevZ, "hearthstonemod:hearthstoneCast", 1, 1);
+					world.playSound(null, player.posX, player.posY, player.posZ, HearthstoneMod.castSoundEvent, SoundCategory.PLAYERS, 1.0F, 1.0F);
 					
-					int dimension = itemStack.stackTagCompound.getInteger("bedDimension");
 					// if player is not in same dimension as bed, travel to that dimension
+					int dimension = tag.getInteger("bedDimension");
 					if(dimension != player.dimension)
 					{
-						player.travelToDimension(dimension);
+						player.changeDimension(dimension);
 					}
 					
-					int bedX = itemStack.stackTagCompound.getInteger("bedX");
-					int bedY = itemStack.stackTagCompound.getInteger("bedY");
-					int bedZ = itemStack.stackTagCompound.getInteger("bedZ");
+					// get bed location
+					int bedX = tag.getInteger("bedX");
+					int bedY = tag.getInteger("bedY");
+					int bedZ = tag.getInteger("bedZ");
+					BlockPos bedPos = new BlockPos(bedX, bedY, bedZ);
+					IBlockState state = world.getBlockState(bedPos);
+					Block block = state.getBlock();
 					
 					// checks if bed is still there
-					if(player.worldObj.getBlock(bedX, bedY, bedZ).isBed(player.worldObj, bedX, bedY, bedZ, player))
+					if(block.isBed(state, world, bedPos, player))
 					{
-						Material material1 = player.worldObj.getBlock(bedX - 1, bedY, bedZ).getMaterial();
-						Material material2 = player.worldObj.getBlock(bedX - 1, bedY + 1, bedZ).getMaterial();
+						// find open spaces around bed
+						boolean north = player.worldObj.getBlockState(bedPos.north()).getBlock().canSpawnInBlock();
+						boolean north1 = player.worldObj.getBlockState(bedPos.north().up()).getBlock().canSpawnInBlock();
 						
-						Material material3 = player.worldObj.getBlock(bedX + 1, bedY, bedZ).getMaterial();
-						Material material4 = player.worldObj.getBlock(bedX + 1, bedY + 1, bedZ).getMaterial();
+						boolean east = player.worldObj.getBlockState(bedPos.east()).getBlock().canSpawnInBlock();
+						boolean east1 = player.worldObj.getBlockState(bedPos.east().up()).getBlock().canSpawnInBlock();
 						
-						Material material5 = player.worldObj.getBlock(bedX, bedY, bedZ - 1).getMaterial();
-						Material material6 = player.worldObj.getBlock(bedX, bedY + 1, bedZ - 1).getMaterial();
+						boolean south = player.worldObj.getBlockState(bedPos.south()).getBlock().canSpawnInBlock();
+						boolean south1 = player.worldObj.getBlockState(bedPos.south().up()).getBlock().canSpawnInBlock();
 						
-						Material material7 = player.worldObj.getBlock(bedX, bedY, bedZ + 1).getMaterial();
-						Material material8 = player.worldObj.getBlock(bedX, bedY + 1, bedZ + 1).getMaterial();
+						boolean west = player.worldObj.getBlockState(bedPos.west()).getBlock().canSpawnInBlock();
+						boolean west1 = player.worldObj.getBlockState(bedPos.west().up()).getBlock().canSpawnInBlock();
 						
-						// finds open space around bed and tps player
-						if(!material1.isSolid() && !material1.isLiquid() && !material2.isSolid() && !material2.isLiquid())
+						// tp player next to bed
+						if(north && north1)
 						{
-							player.setPositionAndUpdate(bedX - 1 + 0.5, bedY, bedZ + 0.5);
+							player.setPositionAndUpdate(bedPos.north().getX() + 0.5, bedPos.north().getY(), bedPos.north().getZ() + 0.5);
 						}
-						else if(!material3.isSolid() && !material3.isLiquid() && !material4.isSolid() && !material4.isLiquid())
+						else if(east && east1)
 						{
-							player.setPositionAndUpdate(bedX + 1 + 0.5, bedY, bedZ + 0.5);
+							player.setPositionAndUpdate(bedPos.east().getX() + 0.5, bedPos.east().getY(), bedPos.east().getZ() + 0.5);
 						}
-						else if(!material5.isSolid() && !material5.isLiquid() && !material6.isSolid() && !material6.isLiquid())
+						else if(south && south1)
 						{
-							player.setPositionAndUpdate(bedX + 0.5, bedY, bedZ - 1 + 0.5);
+							player.setPositionAndUpdate(bedPos.south().getX() + 0.5, bedPos.south().getY(), bedPos.south().getZ() + 0.5);
 						}
-						else if(!material7.isSolid() && !material7.isLiquid() && !material8.isSolid() && !material8.isLiquid())
+						else if(west && west1)
 						{
-							player.setPositionAndUpdate(bedX + 0.5, bedY, bedZ + 1 + 0.5);
+							player.setPositionAndUpdate(bedPos.west().getX() + 0.5, bedPos.west().getY(), bedPos.west().getZ() + 0.5);
 						}
-						// defaults to tp player on top of bed
+						// if no open space, tp player on top of bed
 						else
 						{
 							player.setPositionAndUpdate(bedX + 0.5, bedY + 1, bedZ + 0.5);
 						}
 						
-						world.playSoundEffect(entity.posX, entity.posY, entity.posZ, "hearthstonemod:hearthstoneImpact", 1, 1);
-						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
+						world.playSound(null, player.posX, player.posY, player.posZ, HearthstoneMod.impactSoundEvent, SoundCategory.PLAYERS, 1.0F, 1.0F);
+						
+						// sets hearthstone on cooldown
+						tag.setInteger("cooldown", maxCooldown);
 					}
 					// tps player to where bed was, then breaks link
 					else
 					{
 						player.setPositionAndUpdate(bedX + 0.5, bedY + 1, bedZ + 0.5);
-						world.playSoundEffect(entity.posX, entity.posY, entity.posZ, "hearthstonemod:hearthstoneImpact", 1, 1);
-						itemStack.stackTagCompound.setInteger("cooldown", maxCooldown); // sets hearthstone on cooldown
-						itemStack.stackTagCompound.setBoolean("locationSet", false);
+						world.playSound(null, player.posX, player.posY, player.posZ, HearthstoneMod.impactSoundEvent, SoundCategory.PLAYERS, 1.0F, 1.0F);
+						// sets hearthstone on cooldown
+						tag.setInteger("cooldown", maxCooldown);
+						tag.setBoolean("locationSet", false);
 						// informs player of broken link
-						player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneMissingBed.txt"));
+						player.addChatMessage(new TextComponentTranslation("msg.hearthstoneMissingBed.txt"));
 					}
 				}
 			}
+			// record position of player for detecting movement
+			tag.setDouble("prevX", entity.posX);
+			tag.setDouble("prevY", entity.posY);
+			tag.setDouble("prevZ", entity.posZ);
 			
-			prevX = entity.posX;
-			prevY = entity.posY;
-			prevZ = entity.posZ;
+			// save tag
+			itemStack.setTagCompound(tag);
 		}
-		else
+		// client side
+		/*
+		else if(world.isRemote)
 		{
-			// if player is casting, generate particles
-			if(itemStack.stackTagCompound != null)
+			if(entity instanceof EntityPlayer)
 			{
-				if(itemStack.stackTagCompound.getBoolean("isCasting") && entity instanceof EntityPlayer)
+				EntityPlayer player = (EntityPlayer) entity;
+				NBTTagCompound tag = itemStack.getTagCompound();
+				if(tag != null)
 				{
-					EntityPlayer player = (EntityPlayer) entity;
-					if(player.ticksExisted % 5 == 0)
+					// if cast has started play channel sound
+					if(tag.getInteger("castTime") == 1)
 					{
-						HearthstoneMod.proxy.generateChannelParticles(player);
+						System.out.println("playing sound");
+						// TODO doesnt always trigger on client
+						Minecraft.getMinecraft().getSoundHandler().playSound(new ChannelPositionedSound(player));
 					}
 				}
 			}
-			
-			if(!this.isSoundPlaying && this.playSound)
-			{
-				// this.channelSound = new SoundCasting(entity.posX, entity.posY, entity.posZ);
-				// Minecraft.getMinecraft().getSoundHandler().playSound(channelSound);
-				this.isSoundPlaying = true;
-			}
-			else if(this.isSoundPlaying && !this.playSound)
-			{
-				// Minecraft.getMinecraft().getSoundHandler().stopSound(channelSound);
-				this.isSoundPlaying = false;
-			}
 		}
+		*/
 	}
 	
 	@Override
-	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player)
+	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand)
 	{
 		if(!world.isRemote)
 		{
-			// not sneaking
+			NBTTagCompound tagCompound = itemStack.getTagCompound();
+			
+			// if not sneaking
 			if(!player.isSneaking())
 			{
-				// location is set
-				if(itemStack.stackTagCompound.getBoolean("locationSet"))
+				// if location is set
+				if(tagCompound.getBoolean("locationSet"))
 				{
-					int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
-					// off cooldown
+					int cooldown = tagCompound.getInteger("cooldown");
+					
+					// if off cooldown
 					if(cooldown <= 0)
 					{
 						// if player is not casting, start casting
-						if(!itemStack.stackTagCompound.getBoolean("isCasting"))
+						if(!tagCompound.getBoolean("isCasting"))
 						{
-							itemStack.stackTagCompound.setBoolean("isCasting", true);
-							this.playSound = true;
+							tagCompound.setBoolean("isCasting", true);
 						}
 					}
-					// on cooldown
+					// if on cooldown
 					else
 					{
-						player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneOnCooldown.txt"));
+						player.addChatMessage(new TextComponentTranslation("msg.hearthstoneOnCooldown.txt"));
 					}
 				}
-				// location is not set
+				// if location is not set
 				else
 				{
-					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneNoBed.txt"));
+					player.addChatMessage(new TextComponentTranslation("msg.hearthstoneNoBed.txt"));
 				}
 			}
+			// save tag
+			itemStack.setTagCompound(tagCompound);
 		}
-		return itemStack;
+		return new ActionResult(EnumActionResult.PASS, itemStack);
 	}
 	
 	@Override
-	public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int metadata, float sideX, float sideY, float sideZ)
+	public EnumActionResult onItemUse(ItemStack itemStack, EntityPlayer player, World world, BlockPos blockPos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
 		if(!world.isRemote)
 		{
-			// sneaking and hearthstone is not linked
+			NBTTagCompound tagCompound = itemStack.getTagCompound();
+			
+			// if sneaking
 			if(player.isSneaking())
 			{
-				// checks if block right clicked is bed, then links hearthstone
-				if(world.getBlock(x, y, z).isBed(world, x, y, z, player))
+				// checks if block right clicked is bed
+				IBlockState state = world.getBlockState(blockPos);
+				if(world.getBlockState(blockPos).getBlock().isBed(state, world, blockPos, player))
 				{
-					itemStack.stackTagCompound.setInteger("bedX", x);
-					itemStack.stackTagCompound.setInteger("bedY", y);
-					itemStack.stackTagCompound.setInteger("bedZ", z);
-					itemStack.stackTagCompound.setInteger("bedDimension", player.dimension);
-					itemStack.stackTagCompound.setBoolean("locationSet", true);
-					player.addChatMessage(new ChatComponentTranslation("msg.hearthstoneLinked.txt"));
+					// links bed to hearthstone
+					tagCompound.setInteger("bedX", blockPos.getX());
+					tagCompound.setInteger("bedY", blockPos.getY());
+					tagCompound.setInteger("bedZ", blockPos.getZ());
+					tagCompound.setInteger("bedDimension", player.dimension);
+					tagCompound.setBoolean("locationSet", true);
+					player.addChatMessage(new TextComponentTranslation("msg.hearthstoneLinked.txt"));
 				}
+				// save tag
+				itemStack.setTagCompound(tagCompound);
+				return EnumActionResult.SUCCESS;
 			}
-			return true;
 		}
-		else
-			return false;
+		return EnumActionResult.FAIL;
 	}
 	
+	@Override
 	public boolean showDurabilityBar(ItemStack itemStack)
 	{
-		if(itemStack.stackTagCompound != null)
+		NBTTagCompound tagCompound = itemStack.getTagCompound();
+		if(tagCompound != null)
 		{
-			return itemStack.stackTagCompound.getInteger("cooldown") > 0 || itemStack.stackTagCompound.getInteger("castTime") > 0;
+			return tagCompound.getInteger("cooldown") > 0 || tagCompound.getInteger("castTime") > 0;
 		}
-		else
-			return false;
+		
+		return false;
 	}
 	
+	@Override
 	public double getDurabilityForDisplay(ItemStack itemStack)
 	{
-		if(itemStack.stackTagCompound.getInteger("cooldown") > 0)
-			return (double) itemStack.stackTagCompound.getInteger("cooldown") / (double) maxCooldown;
+		NBTTagCompound tagCompound = itemStack.getTagCompound();
+		if(tagCompound.getInteger("cooldown") > 0)
+			return (double) tagCompound.getInteger("cooldown") / (double) maxCooldown;
 		else
-			return (double) 1 - (itemStack.stackTagCompound.getInteger("castTime") / (double) maxCastTime);
+			return (double) 1 - (tagCompound.getInteger("castTime") / (double) maxCastTime);
 	}
 	
+	@Override
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean par4)
 	{
-		if(itemStack.stackTagCompound != null)
+		NBTTagCompound tagCompound = itemStack.getTagCompound();
+		if(tagCompound != null)
 		{
 			DecimalFormat df = new DecimalFormat();
 			df.setMaximumFractionDigits(3);
-			int cooldown = itemStack.stackTagCompound.getInteger("cooldown");
+			int cooldown = tagCompound.getInteger("cooldown");
 			float minutesExact, secondsExact;
 			int minutes, seconds;
 			minutesExact = cooldown / 1200;
@@ -301,16 +335,6 @@ public class ItemHearthstone extends Item
 			secondsExact = cooldown / 20;
 			seconds = (int) (secondsExact - (minutes * 60));
 			list.add("Cooldown: " + minutes + " minutes " + seconds + " seconds");
-			// list.add("Distance teleported: " + itemStack.stackTagCompound.getInteger("distance"));
-			/*
-			 * sprinting adds .1 exhaustion per meter, jumping adds .2 exhaustion
-			 * assuming the player jumps often while traveling, every 5m traveled adds ~.7 exhaustion, or .14 exhaustion per
-			 * meter
-			 * every 4.0 exhaustion subtracts 1 point of saturation, so every 28.57m consumes 1 saturation (4.0/.14)
-			 * steak adds 12.8 saturation, so traveling 365.71m consumes a steak's worth of saturation (28.57*12.8)
-			 * distance traveled * (1/365.71) gives the number of steaks that would be used to travel that distance
-			 */
-			// list.add("Steaks saved: " + df.format(itemStack.stackTagCompound.getInteger("distance") * .002734));
 		}
 	}
 }

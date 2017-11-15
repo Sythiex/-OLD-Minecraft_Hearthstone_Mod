@@ -1,11 +1,11 @@
 package com.sythiex.hearthstonemod.proxy;
 
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy
 {
-	public void generateChannelParticles(EntityPlayer player)
+	public void preInit(FMLPreInitializationEvent event)
 	{
-	
+		
 	}
 }
