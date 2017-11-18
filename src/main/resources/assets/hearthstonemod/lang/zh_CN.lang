@@ -1,0 +1,6 @@
+item.hearthstone.name=炉石
+msg.hearthstoneOnCooldown.txt=炉石还处于冷却中！
+msg.hearthstoneNoBed.txt=炉石需要链接到一张床！
+msg.hearthstoneMissingBed.txt=你的床被破坏！因此炉石的链接也失效了！
+msg.hearthstoneLinked.txt=炉石现在已链接
+msg.hearthstoneCastCanceled.txt=炉石传送被取消！
